@@ -1,0 +1,16 @@
+<!-- <input placeholder="Send a message..." [(ngModel)]="msgCtrl"> -->
+<!-- <button (click)="sendMessage()">Send</button> -->
+<div class="container-fluid h-50">
+    <div class="row justify-content-center h-100">
+        <div *ngIf="mobile; else unmobile">
+            <app-participants [(toggle)]="tog" *ngIf="tog; else chat" [mobile]="mobile" [participants]="participants" class="chat"></app-participants>
+            <ng-template #chat>
+                <app-chat [(toggle)]="tog" [messages]="messages" [mobile]="mobile" [webSocket]="webSocket" class="chat"></app-chat>
+            </ng-template>
+        </div>
+        <ng-template #unmobile>
+            <app-participants [mobile]="mobile" [participants]="participants" class="col-md-4 col-xl-3 chat"></app-participants>
+            <app-chat [messages]="messages" [mobile]="mobile" [webSocket]="webSocket" class="col-md-8 col-xl-9 chat"></app-chat>
+        </ng-template>
+    </div>
+</div>

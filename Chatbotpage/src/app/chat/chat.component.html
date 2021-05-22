@@ -1,0 +1,50 @@
+<!-- <div class="col-md-8 col-xl-6 chat"> -->
+<div class="card">
+    <div class="card-header msg_head">
+        <div class="d-flex bd-highlight">
+            <div class="img_cont">
+                <img src="https://therichpost.com/wp-content/uploads/2020/06/avatar2.png" class="rounded-circle user_img">
+                <span class="online_icon"></span>
+            </div>
+            <div class="user_info">
+                <span>{{ activeUser }}</span>
+                <p>1767 Messages</p>
+            </div>
+        </div>
+        <mat-icon *ngIf="mobile" id="action_menu_btn" (click)="toggler()">account_box</mat-icon>
+    </div>
+    <div class="card-body msg_card_body">
+        <div *ngFor="let msg of messages">
+            <div *ngIf="msg.name == activeUser; else received" class="d-flex justify-content-end mb-4">
+                <div class="msg_cotainer_send">
+                    {{ msg.msg }}
+                    <span class="msg_time_send">9:10 AM, Today</span>
+                </div>
+                <div class="img_cont_msg">
+                    <img src="https://therichpost.com/wp-content/uploads/2020/06/avatar2.png" class="rounded-circle user_img_msg">
+                </div>
+            </div>
+            <ng-template #received>
+            <div class="d-flex justify-content-start mb-4">
+                <div class="img_cont_msg">
+                    <img src="https://therichpost.com/wp-content/uploads/2020/06/avatar2.png" class="rounded-circle user_img_msg">
+                </div>
+                <div class="msg_cotainer">
+                    {{ msg.msg }}
+                    <span class="msg_time">9:12 AM, Today</span>
+                </div>
+            </div>
+            </ng-template>
+        </div>
+    </div>
+    <div class="card-footer">
+        <div class="input-group">
+            <input name="" class="form-control type_msg" [(ngModel)]="message" placeholder="Type your message...">
+            <div class="input-group-append" (click)="sendMessage()">
+                <span class="input-group-text send_btn"><i class="fas fa-location-arrow"></i></span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- </div> -->
+

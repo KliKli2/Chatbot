@@ -1,0 +1,43 @@
+<!-- <div class="col-md-4 col-xl-3 chat"> -->
+<div class="card mb-sm-3 mb-md-0 contacts_card">
+    <div *ngIf="mobile" class="card-header">
+        <div class="input-group">
+            <!-- <input type="text" placeholder="Search..." name="" class="form-control search"> -->
+            <div class="search">
+                <!-- <span class="input-group-text search_btn"><i class="fas fa-search"></i></span> -->
+                <mat-icon  class="search_btn" (click)="toggler()">input</mat-icon>
+            </div>
+        </div>
+    </div>
+    <div class="card-body contacts_body">
+        <ul class="contacts">
+            <!-- class="active" -->
+            <li *ngFor="let user of participants[0]?.names">
+                <div class="d-flex bd-highlight">
+                    <div class="img_cont">
+                        <img src="https://therichpost.com/wp-content/uploads/2020/06/avatar2.png" class="rounded-circle user_img">
+                        <span class="online_icon"></span>
+                    </div>
+                    <div class="user_info">
+                        <span>{{ user }}</span>
+                        <p>{{ user }} is online</p>
+                    </div>
+                </div>
+            </li>
+            <!-- <li> -->
+            <!--     <div class="d-flex bd-highlight"> -->
+            <!--         <div class="img_cont"> -->
+            <!--             <img src="https://therichpost.com/wp-content/uploads/2020/06/avatar2.png" class="rounded-circle user_img"> -->
+            <!--             <span class="online_icon offline"></span> -->
+            <!--         </div> -->
+            <!--         <div class="user_info"> -->
+            <!--             <span>jassa Mann</span> -->
+            <!--             <p>Rashid left 50 mins ago</p> -->
+            <!--         </div> -->
+            <!--     </div> -->
+            <!-- </li> -->
+        </ul>
+    </div>
+    <div class="card-footer"></div>
+</div>
+<!-- </div> -->
