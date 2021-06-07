@@ -59,7 +59,8 @@ class bot {
             connection.on('message', function (message) {
                 if (message.type === 'utf8') {
                     var data = JSON.parse(message.utf8Data)
-                    console.log('Received: ' + data.msg + ' ' + data.name)
+                    console.log("Bot Data -> " + JSON.stringify(message))
+                    console.log('Received: ' + data.msg + ' ' + data.name + ' ' + data.video)
                 }
             })
 
@@ -93,12 +94,13 @@ class bot {
      */
     post (nachricht) {
         var name = 'MegaBot'
+        var video = 'Video2'
         var inhalt = 'Ich habe dich nicht verstanden wir wollten über Drogen reden'
 
-        for ( var i in this.dict) {
-            console.log(i)
-            console.log(this.dict[i])
-        }
+        // for ( var i in this.dict) {
+        //     console.log("Found in dict -> " + i)
+        //     console.log("What found -> " + this.dict[i])
+        // }
 
         for ( var j in this.dict) {
             if (nachricht.includes(j)) {
@@ -109,7 +111,7 @@ class bot {
          * Verarbeitung
          */
 
-        var msg = '{"type": "msg", "name": "' + name + '", "msg":"' + inhalt + '"}'
+        var msg = '{"type": "msg", "name": "' + name + '", "video": "' + video + '", "msg":"' + inhalt + '"}'
         console.log('Send: ' + msg)
         this.client.con.sendUTF(msg)
     }

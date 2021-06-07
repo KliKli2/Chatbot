@@ -42,7 +42,7 @@ var connections = {}
 
 // Wenn Sich ein client Socket mit dem Server verbinden will kommt er hier an
 wss.on('request', function (request) {
-    console.log(request.origin)
+    // console.log(request.origin)
     var connection = request.accept('chat', request.origin)
 
     connection.on('message', function (message) {
@@ -56,6 +56,7 @@ wss.on('request', function (request) {
         }
 
         var data = JSON.parse(message.utf8Data)
+        console.log("Static Data -> " + JSON.stringify(data))
         var msg = 'leer'
 
         // Variablen um später den letzten Satz und den Sender zu speichern
@@ -75,7 +76,7 @@ wss.on('request', function (request) {
             break
         case 'msg':
             // Erstelle eine Nachricht in JSON mit Typ, Sender und Inhalt
-            msg = '{"type": "msg", "name": "' + name + '", "msg":"' + data.msg + '"}'
+            msg = '{"type": "msg", "name": "' + name + '", "video": "' + data.video + '", "msg":"' + data.msg + '"}'
             utype = 'msg'
             uname = name
             umsg = data.msg

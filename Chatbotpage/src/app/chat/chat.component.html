@@ -15,6 +15,7 @@
     </div>
     <div class="card-body msg_card_body">
         <div *ngFor="let msg of messages">
+            <p>{{ msg | json }}</p>
             <div *ngIf="msg.name == activeUser; else received" class="d-flex justify-content-end mb-4">
                 <div class="msg_cotainer_send">
                     {{ msg.msg }}
