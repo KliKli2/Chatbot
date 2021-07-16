@@ -7,210 +7,203 @@
 				"Hallo, wie kann ich Ihnen weiterhelfen?",
 				"Servus, du willst also eine Reise buchen? Dann bist du hier richtig. Wo soll es denn hingehen?",
 				"Guten Tag. Mit welchen Diensten kann ich Ihnen heute Ihre Wünsche erfüllen?"
+			],
+			"multiple": [
+				"Wir kennen uns doch schon, oder? Sie sind doch der, der gerade eben erst hier war.",
+				"Haben wir uns nicht gerade kennengelernt? Sie müssen nicht immer so formal sein!!",
+				"Jetzt komm schon auf den Punkt, ich habe nicht alle Zeit der Welt."
 			]
 		},
 		{
-			"keyword": ["buchen", "planen"], 
-			"answer" : ["Wohin wollen Sie reisen?"],
-			"italien" : ["Italien ist eine hervorragende Wahl! Hier ist eine Liste von Hotels und flügen: <a href=\"\">Flugempfehlung</a> <a href=\"\">Hotelempfehlung</a>"],
-			"deutschland" :["Deutschland ist eine hervorragende Wahl! Hier ist eine Liste von Hotels und flügen: <a href=\"\">Flugempfehlung</a> <a href=\"\">Hotelempfehlung</a>"],
-			"spanien" :["Spanien ist eine hervorragende Wahl! Hier ist eine Liste von Hotels und flügen: <a href=\"\">Flugempfehlung</a> <a href=\"\">Hotelempfehlung</a>"],
-			"frankreich" :["Frankreich ist eine hervorragende Wahl! Hier ist eine Liste von Hotels und flügen: <a href=\"\">Flugempfehlung</a> <a href=\"\">Hotelempfehlung</a>"],
-			"england" :["England ist eine hervorragende Wahl! Hier ist eine Liste von Hotels und flügen: <a href=\"\">Flugempfehlung</a> <a href=\"\">Hotelempfehlung</a>"],
-			"schweiz" :["Schweiz ist eine hervorragende Wahl! Hier ist eine Liste von Hotels und flügen: <a href=\"\">Flugempfehlung</a> <a href=\"\">Hotelempfehlung</a>"],
-			"portugal" :["Portugal ist eine hervorragende Wahl! Hier ist eine Liste von Hotels und flügen: <a href=\"\">Flugempfehlung</a> <a href=\"\">Hotelempfehlung</a>"],
-			"russland" :["Russland ist eine hervorragende Wahl! Hier ist eine Liste von Hotels und flügen: <a href=\"\">Flugempfehlung</a> <a href=\"\">Hotelempfehlung</a>"],
-			"japan" :["Japan ist eine hervorragende Wahl! Hier ist eine Liste von Hotels und flügen: <a href=\"\">Flugempfehlung</a> <a href=\"\">Hotelempfehlung</a>"],
-			"china" :["China ist eine hervorragende Wahl! Hier ist eine Liste von Hotels und flügen: <a href=\"\">Flugempfehlung</a> <a href=\"\">Hotelempfehlung</a>"],
-			"amerika" :["Amerika ist eine hervorragende Wahl! Hier ist eine Liste von Hotels und flügen: <a href=\"\">Flugempfehlung</a> <a href=\"\">Hotelempfehlung</a>"],
-			"australien" :["Australien ist eine hervorragende Wahl! Hier ist eine Liste von Hotels und flügen: <a href=\"\">Flugempfehlung</a> <a href=\"\">Hotelempfehlung</a>"]
+			"keyword": ["buchen"], 
+			"answer" : [
+				"In welches Land wollen Sie reisen?",
+				"Sehr angenehm zu hören. In welches Gebiet verschalgt es uns denn dieses Mal? Vielleicht RCOUNTRY.",
+				"In diesem Falle, kann ich Ihnen weiterhelfen. Ich kann Ihnen nur unsere Angebote im RSEASON empfehlen.",
+				"Da haben Sie sich den richtigen Kontakt ausgesucht. Kann ich Sie mit unseren RCHARACTER-Angeboten verlocken?"
+			],
+			"multiple": [
+				"Haben Sie sich denn schon wieder für einen anderen Ort entschieden?",
+				"Wenn Sie sich so unsicher bei der Urlaubsplanung sind, kann Ihnen diese Seite eventuell helfen <https://thetravellette.com/top-reiseziele-sommerurlaub-europa/>",
+				"Immer noch hier? Na dann wieder von Vorne, wie kann ich Ihnen helfen?"
+			]
 		},
 		{
-			"keyword": [""], 
-			"answer" : ["Je nachdem wonach Sie suchen, können viele Länder eine gute Kultivierung bieten."]
+			"keyword": ["planen", "planung"], 
+			"answer" : ["Je nachdem wonach Sie suchen, können viele Länder eine gute Kultivierung bieten."],
+			"multiple": [
+				"",
+				"",
+				""
+			]
 		},
 		{
 			"keyword": ["empfehlen", "suchen", "erkundigen"], 
-			"answer" : ["Je nachdem wonach Sie suchen, können viele Länder eine gute Kultivierung bieten."]
+			"answer" : ["Je nachdem wonach Sie suchen, können viele Länder eine gute Kultivierung bieten."],
+			"multiple": [
+				"",
+				"",
+				""
+			]
 		},
 		{
 			"keyword": ["sehenswürdigkeiten"], 
 			"answer" :    ["Von welchem Land möchten Sie die Sehenswürdigkeiten wissen?"],
-			"italien" :   ["Italienische Sehenswürdigkeiten:"],
-			"deutschland":["Deutsche Sehenswürdigkeiten:"],
-			"spanien" :   ["Spanische Sehenswürdigkeiten:"],
-			"frankreich" :["Französische Sehenswürdigkeiten:"],
-			"england" :   ["Englische Sehenswürdigkeiten:"],
-			"schweiz" :   ["Schweizer Sehenswürdigkeiten:"],
-			"portugal" :  ["Portugiesische Sehenswürdigkeiten:"],
-			"russland" :  ["Russische Sehenswürdigkeiten:"],
-			"japan" :     ["Japanische Sehenswürdigkeiten:"],
-			"china" :     ["Chinesische Sehenswürdigkeiten:"],
-			"amerika" :   ["Amerikanische Sehenswürdigkeiten:"],
-			"australien" :["Australische Sehenswürdigkeiten:"]
+			"multiple": [
+				"",
+				"",
+				""
+			]
 		},
 		{
-			"keyword": ["fußweg", "spazieren", "wege"],
+			"keyword": ["wanderung", "wanderungen", "fußweg", "spazieren", "wege"],
 			"answer" :    ["Sie müssten mir einen Standort nennen, für genauere angaben."],
-			"italien" :   ["Italienische:"],
-			"deutschland":["Deutsche:"],
-			"spanien" :   ["Spanische:"],
-			"frankreich" :["Französische:"],
-			"england" :   ["Englische:"],
-			"schweiz" :   ["Schweizer:"],
-			"portugal" :  ["Portugiesische:"],
-			"russland" :  ["Russische:"],
-			"japan" :     ["Japanische:"],
-			"china" :     ["Chinesische:"],
-			"amerika" :   ["Amerikanische:"],
-			"australien" :["Australische:"]
+			"multiple": [
+				"",
+				"",
+				""
+			]
 		}
 	],
+	"noResponse": [
+		"Kein Keyword gefunden",
+		"Ich habe Sie nicht verstanden",
+		"Wie Bitte?",
+		"Können Sie die Frage noch einmal stellen?"
+	],
+	"seasons":[
+		"frühling",
+		"sommer",
+		"herbst",
+		"winter"
+	],
+	"characters":[
+		"berge",
+		"meer",
+		"strand",
+		"historisch"
+	],
 	"countries": [
-		{"italien":[
-			{
-				"season":["herbst", "winter"],
-				"character":["berge", "meer", "strand", "historisch"]
-			}
-		]},
-		{"frankreich":[
-			{
-				"season":["herbst", "winter"],
-				"character":["berge", "meer", "strand", "historisch"]
-			}
-		]},
-		{"spanien":[
-			{
-				"season":["frühling", "winter"],
-				"character":["berge", "meer", "strand", "historisch"]
-			}
-		]},
-		{"portugal":[
-			{
-				"season":["sommer", "winter"],
-				"character":["berge", "meer", "strand", "historisch"]
-			}
-		]},
-		{"österreich":[
-			{
-				"season":["herbst", "winter"],
-				"character":["berge", "meer", "strand", "historisch"]
-			}
-		]},
-		{"tschechien":[
-			{
-				"season":["frühling", "sommer"],
-				"character":["berge", "meer", "strand", "historisch"]
-			}
-		]},
-		{"niederlande":[
-			{
-				"season":["frühling", "winter"],
-				"character":["berge", "meer", "strand", "historisch"]
-			}
-		]},
-		{"belgien":[
-			{
-				"season":["herbst", "winter"],
-				"character":["berge", "meer", "strand", "historisch"]
-			}
-		]},
-		{"estland":[
-			{
-				"season":["sommer", "winter"],
-				"character":["berge", "meer", "strand", "historisch"]
-			}
-		]},
-		{"finnland":[
-			{
-				"season":["herbst", "winter"],
-				"character":["berge", "meer", "strand", "historisch"]
-			}
-		]},
-		{"griechenland":[
-			{
-				"season":["frühling", "winter"],
-				"character":["berge", "meer", "strand", "historisch"]
-			}
-		]},
-		{"irland":[
-			{
-				"season":["frühling", "sommer"],
-				"character":["berge", "meer", "strand", "historisch"]
-			}
-		]},
-		{"kroatien":[
-			{
-				"season":["sommer", "herbst"],
-				"character":["berge", "meer", "strand", "historisch"]
-			}
-		]},
-		{"lettland":[
-			{
-				"season":["herbst", "winter"],
-				"character":["berge", "meer", "strand", "historisch"]
-			}
-		]},
-		{"litauen":[
-			{
-				"season":["herbst", "winter"],
-				"character":["berge", "meer", "strand", "historisch"]
-			}
-		]},
-		{"luxemburg":[
-			{
-				"season":["sommer", "winter"],
-				"character":["berge", "meer", "strand", "historisch"]
-			}
-		]},
-		{"malta":[
-			{
-				"season":["frühling", "herbst"],
-				"character":["berge", "meer", "strand", "historisch"]
-			}
-		]},
-		{"polen":[
-			{
-				"season":["herbst", "winter"],
-				"character":["berge", "meer", "strand", "historisch"]
-			}
-		]},
-		{"rumänien":[
-			{
-				"season":["frühling", "winter"],
-				"character":["berge", "meer", "strand", "historisch"]
-			}
-		]},
-		{"slowakei":[
-			{
-				"season":["frühling", "sommer"],
-				"character":["berge", "meer", "strand", "historisch"]
-			}
-		]},
-		{"slowenien":[
-			{
-				"season":["herbst", "winter"],
-				"character":["berge", "meer", "strand", "historisch"]
-			}
-		]},
-		{"ungarn":[
-			{
-				"season":["frühling", "winter"],
-				"character":["berge", "meer", "strand", "historisch"]
-			}
-		]},
-		{"deutschland":[
-			{
-				"season":["sommer", "herbst"],
-				"character":["berge", "meer", "strand", "historisch"]
-			}
-		]},
-		{"schweden":[
-			{
-				"season":["herbst", "winter"],
-				"character":["berge", "meer", "strand", "historisch"]
-			}
-		]}
+		{
+			"name": "italien",
+			"season":["herbst", "winter"],
+			"character":["berge", "meer", "strand", "historisch"]
+		},
+		{
+			"name": "frankreich",
+			"season":["herbst", "winter"],
+			"character":["berge", "meer", "strand", "historisch"]
+		},
+		{
+			"name":"spanien",
+			"season":["frühling", "winter"],
+			"character":["berge", "meer", "strand", "historisch"]
+		},
+		{
+			"name":"portugal",
+			"season":["sommer", "winter"],
+			"character":["berge", "meer", "strand", "historisch"]
+		},
+		{
+			"name":"österreich",
+			"season":["herbst", "winter"],
+			"character":["berge", "meer", "strand", "historisch"]
+		},
+		{
+			"name": "tschechien",
+			"season":["frühling", "sommer"],
+			"character":["berge", "meer", "strand", "historisch"]
+		},
+		{
+			"name":"niederlande",
+			"season":["frühling", "winter"],
+			"character":["berge", "meer", "strand", "historisch"]
+		},
+		{
+			"name":"belgien",
+			"season":["herbst", "winter"],
+			"character":["berge", "meer", "strand", "historisch"]
+		},
+		{
+			"name":"estland",
+			"season":["sommer", "winter"],
+			"character":["berge", "meer", "strand", "historisch"]
+		},
+		{
+			"name":"finnland",
+			"season":["herbst", "winter"],
+			"character":["berge", "meer", "strand", "historisch"]
+		},
+		{
+			"name":"griechenland",
+			"season":["frühling", "winter"],
+			"character":["berge", "meer", "strand", "historisch"]
+		},
+		{
+			"name":"irland",
+			"season":["frühling", "sommer"],
+			"character":["berge", "meer", "strand", "historisch"]
+		},
+		{
+			"name":"kroatien",
+			"season":["sommer", "herbst"],
+			"character":["berge", "meer", "strand", "historisch"]
+		},
+		{
+			"name":"lettland",
+			"season":["herbst", "winter"],
+			"character":["berge", "meer", "strand", "historisch"]
+		},
+		{
+			"name":"litauen",
+			"season":["herbst", "winter"],
+			"character":["berge", "meer", "strand", "historisch"]
+		},
+		{
+			"name":"luxemburg",
+			"season":["sommer", "winter"],
+			"character":["berge", "meer", "strand", "historisch"]
+		},
+		{
+			"name":"malta",
+			"season":["frühling", "herbst"],
+			"character":["berge", "meer", "strand", "historisch"]
+		},
+		{
+			"name":"polen",
+			"season":["herbst", "winter"],
+			"character":["berge", "meer", "strand", "historisch"]
+		},
+		{
+			"name":"rumänien",
+			"season":["frühling", "winter"],
+			"character":["berge", "meer", "strand", "historisch"]
+		},
+		{
+			"name":"slowakei",
+			"season":["frühling", "sommer"],
+			"character":["berge", "meer", "strand", "historisch"]
+		},
+		{
+			"name":"slowenien",
+			"season":["herbst", "winter"],
+			"character":["berge", "meer", "strand", "historisch"]
+		},
+		{
+			"name":"ungarn",
+			"season":["frühling", "winter"],
+			"character":["berge", "meer", "strand", "historisch"]
+		},
+		{
+			"name":"deutschland",
+			"season":["sommer", "herbst"],
+			"character":["berge", "meer", "strand", "historisch"]
+		},
+		{
+			"name":"schweden",
+			"season":["herbst", "winter"],
+			"character":["berge", "meer", "strand", "historisch"]
+		}
 	],
 	"sights": [
 		{
