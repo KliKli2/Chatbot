@@ -47,7 +47,7 @@ wss.on('request', function (request) {
 
     connection.on('message', function (message) {
         var name = ''
-        console.log(message)
+        // console.log(message)
 
         for (var key in connections) {
             if (connection === connections[key]) {
@@ -56,7 +56,7 @@ wss.on('request', function (request) {
         }
 
         var data = JSON.parse(message.utf8Data)
-        console.log("Static Data -> " + JSON.stringify(data))
+        // console.log("Static Data -> " + JSON.stringify(data))
         var msg = 'leer'
 
         // Variablen um später den letzten Satz und den Sender zu speichern
@@ -76,7 +76,14 @@ wss.on('request', function (request) {
             break
         case 'msg':
             // Erstelle eine Nachricht in JSON mit Typ, Sender und Inhalt
-            msg = '{"type": "msg", "name": "' + name + '", "video": "' + data.video + '", "msg":"' + data.msg + '"}'
+            msg = '{"type": "msg", "name": "' + 
+                name + 
+                '", "msg": "' 
+                + data.msg + 
+                '", "images":"' + 
+                data.images +
+                '", "links": "' +
+                data.links + '"}'
             utype = 'msg'
             uname = name
             umsg = data.msg
@@ -91,8 +98,8 @@ wss.on('request', function (request) {
         }
 
         // Leite die Daten des Users an den Bot weiter, damit der antworten kann
-        if (uname !== 'MegaBot' && utype === 'msg') {
-            var test = myBot.post(umsg)
+        if (uname !== 'Chatbot' && utype === 'msg') {
+            var test = myBot.post(umsg, false)
         }
     })
 })
