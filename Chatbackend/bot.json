@@ -1,8 +1,8 @@
 {
 	"greetings": [
 		"Guten Tag. Ich bin ein Reiseführer durch ganz EU. Ich hoffe ich kann Ihnen weiterhelfen. Was kann ich für Sie tun?",
-		"",
-		""
+		"Herzlich willkommen, wenn Sie eine Reise durch die EU planen wolen, bin ich der richtige für Sie!! Haben Sie denn schon eine gutes Ziel?",
+		"Willkommen willkommen, was kann ich heute für Sie tun? Ich bin ein hervorragender Ratgeber in Sachen EU Reisen. Bei anderen Belangen kann ich Sie nur weiterleiten."
 	],
 	"answers": [
 		{
@@ -116,417 +116,1351 @@
 	"countries": [
 		{
 			"name": "italien",
-			"season":["herbst", "winter"],
-			"character":["berge", "meer", "strand", "historisch"]
+			"season": ["herbst", "winter"],
+			"character": ["berge", "meer", "strand", "historisch"],
+			"sights": {
+				"Kolosseum":[
+					{"definition": ["Es ist das Wahrzeichen von Rom, wenn nicht sogar von ganz Italien: das Kolosseum. Das imposante und weltberühmte architektonische Meisterwerk beeindruckt mit einem Umfang von 527 Metern und einer Höhe von 48 Metern. Heute ist das Kolosseum ein Schmuckstück, damals war es blutiger Schauplatz bestialischer Gladiatorenkämpfe zu Freuden des damaligen Kaiserhauses."]},
+					{"preis": ["12€ Erwachsene, 7,50€ Jugendliche (18-25 Jahre, EU-Bürger), kostenfrei für alle unter 18 Jahre (gilt für Forum Romanum und Kolosseum, 2 Tage gültig)"]},
+					{"öffnung": ["täglich ab 8.30 Uhr geöffnet, Schließungszeit ändert sich saisonal"]}
+				],
+				"Forum Romanum":[
+					{"definition": ["Besucht ihr das Kolosseum in Rom, könnt ihr direkt auch eine weitere Sehenswürdigkeit in Italien mitnehmen. Das Forum Romanum in Rom ist wie die Agora in Athen: ehemaliges wirtschaftliches, politisches, religiöses und kulturelles Zentrum der Stadt. Hier tummelten sich die Römer, sie handelten, fällten Urteile und legten ihren Lebensmittelpunkt hierher. Kaum vorstellbar, wenn ihr euch das Forum Romanum heute mit all den Ruinen anseht."]},
+					{"preis": ["12€ Erwachsene, 7,50€ Jugendliche (18-25 Jahre, EU-Bürger), kostenfrei für alle unter 18 Jahre"]},
+					{"öffnung": ["täglich ab 8.30 Uhr geöffnet, Schließungszeit ändert sich saisonal"]}
+				],
+				"Schiefer Turm von Pisa":[
+					{"definition": ["Kaum ein anderes Bauwerk steht so sehr für eine Stadt wie der Schiefe Turm von Pisa. Bereits nach Bau der dritten Etage im 12. Jahrhundert begann die Neigung des Turms. Schuld an der Schieflage war der Untergrund. Er war nicht fest genug, um den schweren Turm beziehungsweise die ersten Etagen zu tragen."]},
+					{"preis": ["18€, keine Ermäßigung für Kinder"]},
+					{"öffnung": ["täglich 10-18 Uhr"]}
+				]
+			},
+			"possibilities":
+			[
+				{
+					"keyword": ["buchen", "buchung", "gebucht"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["planen", "planung", "geplant"], 
+					"answer" : [
+						"Eine Reise nach Italien ist fabelhaft."
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["empfehlen", "suchen", "erkundigen"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["sehenswürdigkeiten", "zu sehen", "besichtigen", "anschauliches", "kultur"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["wanderung", "wanderungen", "fußweg", "spazieren", "wege"],
+					"answer" : [
+					],
+					"multiple": [
+					]
+				}
+			]
 		},
 		{
 			"name": "frankreich",
 			"season":["herbst", "winter"],
-			"character":["berge", "meer", "strand", "historisch"]
+			"character":["berge", "meer", "strand", "historisch"],
+			"sights":
+			{
+				"Schloss Versailles":[
+					{"definition":["Es ist eine der größten Palastanlagen Europas und war von Mitte des 17. Jahrhunderts bis zum Ausbruch der Französischen Revolution die Residenz der französischen Könige."]},
+					{"preis":["Der Eintritt kostet 20 Euro"]},
+					{"öffnung":["dienstags bis sonntags von 9.30 bis 17.30 Uhr"]}
+				],
+				"Eiffelturm":[
+					{"definition":["Erbaut wurde er von 1887 bis 1889 als Eingangstor für die Weltausstellung und als Erinnerung an den 100. Jahrestag der Französischen Revolution.Benannt ist die berühmte Stahlkonstruktion nach ihrem Erbauer Gustave Eiffel."]},
+					{"preis":["Erwachsene zahlen 25 Euro, Kinder und junge Erwachsene von 12 bis 24 Jahren zahlen 12,40 Euro, ermäßigter Eintritt kostet 6,30 Euro und Kinder bis 4 Jahre haben freien Zugang"]},
+					{"öffnung":["vom 15. Juni bis 1. September täglich von 9 bis 0.45 Uhr, im Rest des Jahres täglich von 9.30 bis 23.45 Uhr"]}
+				]
+			},
+			"possibilities":
+			[
+				{
+					"keyword": ["buchen", "buchung", "gebucht"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["planen", "planung", "geplant"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["empfehlen", "suchen", "erkundigen"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["sehenswürdigkeiten", "zu sehen", "besichtigen", "anschauliches", "kultur"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["wanderung", "wanderungen", "fußweg", "spazieren", "wege"],
+					"answer" : [
+					],
+					"multiple": [
+					]
+				}
+			]
 		},
 		{
 			"name":"spanien",
 			"season":["frühling", "winter"],
-			"character":["berge", "meer", "strand", "historisch"]
+			"character":["berge", "meer", "strand", "historisch"],
+			"sights":
+			{
+				"Sagrada Familia":[
+					{"definition":["Die Sagrada Familia ist das Wahrzeichen der weltgewandten Stadt Barcelona und wird täglich von Millionen von internationalen Besuchern bestaunt."]},
+					{"preis":["Kirche: 15€ (nur online erwerblich) Kirche & Audioguide: 22€ Kirche, Museum & Audioguide: 24€ Kirche & Führung: 24€ Kirche, Turmbesuch & Audioguide: 29€"]},
+					{"öffnung":["Nov.-Feb. 9-18 Uhr Mrz. 9-19 Uhr Apr.-Sept. 9-20 Uhr Okt. 9-19 Uhr"]}
+				],
+				"Alhambra":[
+					{"definition":["Bei einer Reise nach Andalusien sollte ein Besuch zur Alhambra Festung unbedingt auf eurer To-Do Liste stehen. Geschützt durch Berge und umgeben von Wäldern thront die „rote“ Burg, die nach den Farben ihrer Mauern benannt und im Mittelalter von arabischen Herrschern erbaut wurde, im ältesten Gebiet der Stadt auf dem Sabikah-Hügel."]},
+					{"preis":["Erwachsene 14€ kostenfrei für Kinder unter 12 Jahren Abendbesichtigung 5-8€"]},
+					{"öffnung":["1. Apr.-14. Okt.: Mo-So 8.30-20 Uhr, Di-Sa 22-23.30 Uhr (Abendbesichtigung) 15. Okt.-31. Mrz.: Mo-So 8.30-18 Uhr, Fr & Sa 20-21.30 Uhr 25. Dez. & 1. Jan.: geschlossen"]}
+				]
+			},
+			"possibilities":
+			[
+				{
+					"keyword": ["buchen", "buchung", "gebucht"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["planen", "planung", "geplant"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["empfehlen", "suchen", "erkundigen"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["sehenswürdigkeiten", "zu sehen", "besichtigen", "anschauliches", "kultur"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["wanderung", "wanderungen", "fußweg", "spazieren", "wege"],
+					"answer" : [
+					],
+					"multiple": [
+					]
+				}
+			]
 		},
 		{
 			"name":"portugal",
 			"season":["sommer", "winter"],
-			"character":["berge", "meer", "strand", "historisch"]
+			"character":["berge", "meer", "strand", "historisch"],
+			"sights":
+			{
+				"Landschaft um Sintra":[
+					{"definition":["Die Landschaft hier ist wie aus der Seite eines Märchenbuches der Gebrüder Grimm herausgerissen: Ein dicht bewachsener Zauberwald neben einem exotischen Schlossgarten und dazu ein majestätischer und knallbunter Palast. Das alles und noch viel mehr, solltest du bei einem Tagestrip in dieser Region auf jeden Fall erkunden."]},
+					{"preis":["Kostenlos"]},
+					{"öffnung":["Jederzeit"]}
+				],
+				"Wallfahrtskirche auf dem Monta Santa Luzia":[
+					{"definition":["Obwohl die Wallfahrtskirche auf dem Monte Santa Luzia in Viana do Castello recht alt aussieht, wurde sie doch erst im Jahr 1904 erbaut. Du erreichst den Berg per Seilbahn oder Auto. Wenn du genug Zeit hast, kannst du auch die Treppe nutzen, die den Berg hinauf führt."]},
+					{"preis":["Kostenlos"]},
+					{"öffnung":["Jederzeit"]}
+				]
+			},
+			"possibilities":
+			[
+				{
+					"keyword": ["buchen", "buchung", "gebucht"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["planen", "planung", "geplant"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["empfehlen", "suchen", "erkundigen"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["sehenswürdigkeiten", "zu sehen", "besichtigen", "anschauliches", "kultur"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["wanderung", "wanderungen", "fußweg", "spazieren", "wege"],
+					"answer" : [
+					],
+					"multiple": [
+					]
+				}
+			]
 		},
 		{
 			"name":"österreich",
 			"season":["herbst", "winter"],
-			"character":["berge", "meer", "strand", "historisch"]
+			"character":["berge", "meer", "strand", "historisch"],
+			"sights":
+			{
+				"Schloss Schönbrunn":[
+					{"definition":["Die wunderschöne spätbarocke Schlossanlage in Österreichs Hauptstadt gehört zu den beliebtesten Sehenswürdigkeiten in Wien und führt deshalb auch zu Recht unsere Liste an. Tauchen Sie bei einer Besichtigung der kulturhistorisch bedeutenden Anlage in die Geschichte seiner prominenten Bewohner ein."]},
+					{"preis":["Kostenlos"]},
+					{"öffnung":["9:00 - 20:00"]}
+				],
+				"Festung Hohensalzburg":[
+					{"definition":["Eine Besichtigung der Burg führt durch zahlreiche original hergerichtete Zimmer mit detailreicher Wand- und Deckenverzierung sowie vorbei an unzähligen mittelalterlichen Exponaten. Interessant sind auch die Folterkammer oder das Salzmagazin. Auch die Außenanlage kann erkundet werden. Da die Festung in 542 m Höhe erbaut wurde, bietet sich Ihnen von hier ein beeindruckender Blick über Salzburg."]},
+					{"preis":["Kostenlos"]},
+					{"öffnung":["9:00 - 20:00"]}
+				]
+			},
+			"possibilities":
+			[
+				{
+					"keyword": ["buchen", "buchung", "gebucht"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["planen", "planung", "geplant"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["empfehlen", "suchen", "erkundigen"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["sehenswürdigkeiten", "zu sehen", "besichtigen", "anschauliches", "kultur"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["wanderung", "wanderungen", "fußweg", "spazieren", "wege"],
+					"answer" : [
+					],
+					"multiple": [
+					]
+				}
+			]
 		},
 		{
 			"name": "tschechien",
 			"season":["frühling", "sommer"],
-			"character":["berge", "meer", "strand", "historisch"]
+			"character":["berge", "meer", "strand", "historisch"],
+			"sights":
+			{
+				"Prager Zoo":[
+					{"definition":["Der Prager Zoo befindet sich auf einem Hügel im Stadtteil Troja am Moldau-Ufer. Hier leben circa 5.000 Tiere von rund 700 verschiedenen Tierarten. Als Highlights gelten die Komodowarane, asiatische Elefanten und die seltenen Przewalskipferde, die in den Steppen Zentralasiens heimisch sind. Entdecken Sie weitere Höhepunkte bei einer Fahrt mit der Miniaturseilbahn."]},
+					{"preis":["ab 34,88€ pro Erwachsenem (Der Preis variiert je nach Gruppengröße.)"]},
+					{"öffnung":["09:00 – 19:00"]}
+				],
+				"Prager Altstadt":[
+					{"definition":["Der Altstädter Ring gilt als historisches und kulturelles Zentrum der Prager Altstadt und eignet sich hervorragend als Startpunkt für einen Rundgang. In der Platzmitte thront das Jan-Hus-Denkmal, welches zu Ehren des Reformators errichtet wurde. Drumherum befinden sich wichtige Gebäude wie das Altstädter Rathaus und die Kirche St. Maria vor dem Teyn."]},
+					{"preis":["mit Führung ab 38,00€ pro Erwachsenem"]},
+					{"öffnung":["Immer"]}
+				]
+			},
+			"possibilities":
+			[
+				{
+					"keyword": ["buchen", "buchung", "gebucht"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["planen", "planung", "geplant"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["empfehlen", "suchen", "erkundigen"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["sehenswürdigkeiten", "zu sehen", "besichtigen", "anschauliches", "kultur"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["wanderung", "wanderungen", "fußweg", "spazieren", "wege"],
+					"answer" : [
+					],
+					"multiple": [
+					]
+				}
+			]
 		},
 		{
 			"name":"niederlande",
 			"season":["frühling", "winter"],
-			"character":["berge", "meer", "strand", "historisch"]
+			"character":["berge", "meer", "strand", "historisch"],
+			"sights":
+			{
+				"Amsterdam":[
+					{"definition":["Amsterdam ist nicht nur die Hauptstadt der Niederlande, sondern auch eine der schönsten Städte in Holland mit einer Vielzahl an Sehenswürdigkeiten. Sie ist mit über 800.000 Einwohnern das Aushängeschild und die bevölkerungsreichste Metropole des Königreichs der Niederlande."]},
+					{"preis":["Kostenlos"]},
+					{"öffnung":["Immer"]}
+				],
+				"Anne-Frank-Haus in Amsterdam":[
+					{"definition":["Es ist eine Gedenkstätte und Museum zugleich zu Ehren des jüdischen Holocaust Opfers Anne Frank. Anne Frank Haus in AmsterdamDie ist während der Judenverfolgung in Deutschland in die Niederlande geflohen. Das Museum zeigt, wie Anne Frank und ihre Familie damals in der Prinsengracht 263 lebte und sichversteckte."]},
+					{"preis":[""]},
+					{"öffnung":["09:00 – 19:00"]}
+				]
+			},
+			"possibilities":
+			[
+				{
+					"keyword": ["buchen", "buchung", "gebucht"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["planen", "planung", "geplant"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["empfehlen", "suchen", "erkundigen"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["sehenswürdigkeiten", "zu sehen", "besichtigen", "anschauliches", "kultur"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["wanderung", "wanderungen", "fußweg", "spazieren", "wege"],
+					"answer" : [
+					],
+					"multiple": [
+					]
+				}
+			]
 		},
 		{
 			"name":"belgien",
 			"season":["herbst", "winter"],
-			"character":["berge", "meer", "strand", "historisch"]
+			"character":["berge", "meer", "strand", "historisch"],
+			"sights":
+			{
+				"Manneken-Pis":[
+					{"definition":["Es ist DAS Wahrzeichen Belgiens und eine der Anlaufstellen für Touristen aus aller Welt: Der Manneken Pis in Brüssel – der pinkelnde kleine Mann. Die 61 cm hohe Statue besteht aus Bronze und ziert den Brunnen an der Ecke Rue de l’Etuve und Rue des Grands Carmes. Ein Besuch hier lässt Sie schmunzeln, aber passen Sie auf, dass Sie nicht nass werden!"]},
+					{"preis":[""]},
+					{"öffnung":[""]}
+				],
+				"Atomium":[
+					{"definition":["Das Atomium steht für eine friedliche Nutzung der Kernenergie und ist beispielhaft für das Atomzeitalter. Besucher dieses eindrucksvollen Wahrzeichens können die untersten drei Turm-Kugeln betreten und unterschiedlichste Ausstellungen bestaunen. Perfekt für jeden, der seinen Urlaub in Belgien mit ein wenig Wissenschaft verbinden möchte."]},
+					{"preis":[""]},
+					{"öffnung":[""]}
+				]
+			},
+			"possibilities":
+			[
+				{
+					"keyword": ["buchen", "buchung", "gebucht"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["planen", "planung", "geplant"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["empfehlen", "suchen", "erkundigen"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["sehenswürdigkeiten", "zu sehen", "besichtigen", "anschauliches", "kultur"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["wanderung", "wanderungen", "fußweg", "spazieren", "wege"],
+					"answer" : [
+					],
+					"multiple": [
+					]
+				}
+			]
 		},
 		{
 			"name":"estland",
 			"season":["sommer", "winter"],
-			"character":["berge", "meer", "strand", "historisch"]
+			"character":["berge", "meer", "strand", "historisch"],
+			"sights":
+			{
+				"Tallinn":[
+					{"definition":["Direkt an der Ostsee liegt das kulturelle Zentrum des Landes. Die Geschichte der Stadt begann am Domberg. Hier ließen sich die ersten Siedler nieder, weil sie von dort aus die Küste gut im Blick hatten. Heute blickst du von dort aus auf die Dächer Tallinns. Außerdem erwartet dich am Domberg die beeindruckende Alexander-Newski-Kathedrale."]},
+					{"preis":[""]},
+					{"öffnung":[""]}
+				],
+				"Insel Hiiumaa":[
+					{"definition":["Auf der zweitgrößten Insel Estlands erwarten dich einsame Strände und unberührte Natur. Auf Hiiumaa kannst du richtig abschalten und zwischen den endlosen Wäldern wandern. Wanderer, aber auch Segler und Surfer sind hier am richtigen Platz. Neben der Inselhauptstadt gibt es noch ein paar kleine Orte auf der Insel. Vor allem sehenswert sind die zahlreichen Leuchttürme. Einer der ältesten Türme ist der Kõpu Tuletorn, auf dem du einen großartigen Blick über die Insel ergatterst."]},
+					{"preis":[""]},
+					{"öffnung":[""]}
+				]
+			},
+			"possibilities":
+			[
+				{
+					"keyword": ["buchen", "buchung", "gebucht"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["planen", "planung", "geplant"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["empfehlen", "suchen", "erkundigen"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["sehenswürdigkeiten", "zu sehen", "besichtigen", "anschauliches", "kultur"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["wanderung", "wanderungen", "fußweg", "spazieren", "wege"],
+					"answer" : [
+					],
+					"multiple": [
+					]
+				}
+			]
 		},
 		{
 			"name":"finnland",
 			"season":["herbst", "winter"],
-			"character":["berge", "meer", "strand", "historisch"]
+			"character":["berge", "meer", "strand", "historisch"],
+			"sights":
+			{
+				"Helsinki":[
+					{"definition":["Die lebendige Hafenstadt bezaubert Besucher mit wunderschönen Inseln, grünen Parks und gemütlichen Straßencafés. Abwechslungsreiche Architektur und eindrucksvolle Kathedralen prägen das Stadtbild. In der Hauptstadt Finnlands gibt es einiges zu entdecken: Vom Kauppatori-Markt mit seinen leckeren Lachsbrötchen über die beeindruckende Uspenski-Kathedrale bis hin zu einer Fahrt mit dem SkyWheel, einem verglasten Riesenrad. Hier ist für jeden etwas dabei!"]},
+					{"preis":[""]},
+					{"öffnung":[""]}
+				],
+				"Linnansaari Nationalpark":[
+					{"definition":["Der Linnansaari Nationalpark befindet sich in der Region Savo. Dieses Naturparadies wurde 1956 gegründet, um Flora und Fauna der Finnischen Seenplatte zu schützen. Mehr als 130 Inseln zählen zu dem Park, der mit Guide oder auch selbständig erwandert werden kann. Die abwechslungsreiche Landschaft aus Wäldern, Wiesen, Felsen und Wasser lädt das ganze Jahr über zu Erkundungstouren ein."]},
+					{"preis":[""]},
+					{"öffnung":[""]}
+				]
+			},
+			"possibilities":
+			[
+				{
+					"keyword": ["buchen", "buchung", "gebucht"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["planen", "planung", "geplant"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["empfehlen", "suchen", "erkundigen"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["sehenswürdigkeiten", "zu sehen", "besichtigen", "anschauliches", "kultur"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["wanderung", "wanderungen", "fußweg", "spazieren", "wege"],
+					"answer" : [
+					],
+					"multiple": [
+					]
+				}
+			]
 		},
 		{
 			"name":"griechenland",
 			"season":["frühling", "winter"],
-			"character":["berge", "meer", "strand", "historisch"]
+			"character":["berge", "meer", "strand", "historisch"],
+			"sights":
+			{
+				"Athener Akropolis":[
+					{"definition":["Hoch über der Stadt Athen ragt die wohl bekannteste Sehenswürdigkeit Griechenlands: die Akropolis. Die Ruinen der ehemaligen Stadtfestung sind das Wahrzeichen der Stadt und ein Schmuckstück antiker Architektur, die ihr im Griechenland Urlaub unbedingt besuchen solltet."]},
+					{"preis":["20€, ermäßigt 10€"]},
+					{"öffnung":["8-20 Uhr (April-Oktober) / 8-17 Uhr (November-März)"]}
+				],
+				"Meteora Klöster":[
+					{"definition":["Die Klöster wurden auf Sandsteinen errichtet und scheinen als würden sie über den umliegenden Schluchten schweben. Sechs der Klöster, die ihr besichtigen könnt, sind noch bewohnt."]},
+					{"preis":["3€ je Kloster, Kinder haben kostenlosen Eintritt"]},
+					{"öffnung":["unterschiedlich, in der Regel sind alle Klöster täglich ab 9 Uhr geöffnet"]}
+				]
+			},
+			"possibilities":
+			[
+				{
+					"keyword": ["buchen", "buchung", "gebucht"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["planen", "planung", "geplant"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["empfehlen", "suchen", "erkundigen"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["sehenswürdigkeiten", "zu sehen", "besichtigen", "anschauliches", "kultur"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["wanderung", "wanderungen", "fußweg", "spazieren", "wege"],
+					"answer" : [
+					],
+					"multiple": [
+					]
+				}
+			]
 		},
 		{
 			"name":"irland",
 			"season":["frühling", "sommer"],
-			"character":["berge", "meer", "strand", "historisch"]
+			"character":["berge", "meer", "strand", "historisch"],
+			"sights":
+			{
+				"Trinity College in Dublin":[
+					{"definition":["Eine der bekanntesten Sehenswürdigkeiten von Irland ist das Trinity College in der Hauptstadt Dublin. Besonders die Alte Bibliothek der 1592 gegründeten Universität ist es, welche die Touristen anlockt. Hier lagern rund 4,5 Millionen Bände sowie eine große Sammlung historischer Handschriften, Manuskripte, Inkunabeln und frühe Drucke der Bibel."]},
+					{"preis":["Erwachsene zahlen 10 Euro, Kinder unter 12 Jahren haben freien Eintritt"]},
+					{"öffnung":["Von Mai bis September montags bis samstags von 8.30 bis 17 Uhr und sonntags von 9.30 bis 17 Uhr. Von Oktober bis April montags bis samstags von 9.30 bis 17 Uhr und sonntags von 12 bis 16.30 Uhr"]}
+				],
+				"Cliffs of Moher":[
+					{"definition":["Die berühmte Steilküste an der Südwestküste von Irland gehört zu den bekanntesten Irland Sehenswürdigkeiten und darf deswegen auf dieser Liste natürlich nicht fehlen. Auf einer Strecke von rund acht Kilometern ziehen sich die Cliffs of Moher entlang der atlantischen Küste. An vielen Stellen ragen sie nahezu senkrecht nach oben. Ihre Höhe liegt zwischen 120 und 214 Metern."]},
+					{"preis":["Erwachsene ab 16 Jahren zahlen 6 Euro. Kinder unter 16 Jahren haben freien Eintritt. Studenten, Schwerbehinderte und Personen über 65 Jahren zahlen 4,50 Euro"]},
+					{"öffnung":["Von November bis Februar täglich von 9 bis 17 Uhr. Von März bis April und von September bis Oktober täglich von 8 bis 19 Uhr. In den Monaten Mai bis August täglich von 8 bis 21 Uhr"]}
+				]
+			},
+			"possibilities":
+			[
+				{
+					"keyword": ["buchen", "buchung", "gebucht"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["planen", "planung", "geplant"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["empfehlen", "suchen", "erkundigen"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["sehenswürdigkeiten", "zu sehen", "besichtigen", "anschauliches", "kultur"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["wanderung", "wanderungen", "fußweg", "spazieren", "wege"],
+					"answer" : [
+					],
+					"multiple": [
+					]
+				}
+			]
 		},
 		{
 			"name":"kroatien",
 			"season":["sommer", "herbst"],
-			"character":["berge", "meer", "strand", "historisch"]
+			"character":["berge", "meer", "strand", "historisch"],
+			"sights":
+			{
+				"Nationalpark Plitvicer Seen":[
+					{"definition":["Er ist der größte und älteste Nationalpark in Kroatien und wohl einer der Schönsten in ganz Europa. Der Nationalpark Plitvicer Seen liegt im Nordosten von Kroatien und ist für die meisten Kroatienurlauber ein absolutes Muss."]},
+					{"preis":[""]},
+					{"öffnung":[""]}
+				],
+				"Dubrovnik":[
+					{"definition":["Die „Perle an der Adria“, das ist Dubrovnik. Die einmalig schöne Altstadt sucht ihresgleichen und lockt jedes Jahr unzählige Touristen an. Egal, ob ihr einen Städtetrip nach Dubrovnik plant oder euch in der Nähe ein Ferienhaus an der Küste in Kroatien nehmt, dort werdet ihr garantiert eine unvergessliche Zeit erleben."]},
+					{"preis":[""]},
+					{"öffnung":[""]}
+				]
+			},
+			"possibilities":
+			[
+				{
+					"keyword": ["buchen", "buchung", "gebucht"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["planen", "planung", "geplant"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["empfehlen", "suchen", "erkundigen"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["sehenswürdigkeiten", "zu sehen", "besichtigen", "anschauliches", "kultur"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["wanderung", "wanderungen", "fußweg", "spazieren", "wege"],
+					"answer" : [
+					],
+					"multiple": [
+					]
+				}
+			]
 		},
 		{
 			"name":"lettland",
 			"season":["herbst", "winter"],
-			"character":["berge", "meer", "strand", "historisch"]
+			"character":["berge", "meer", "strand", "historisch"],
+			"sights":
+			{
+				"Riga":[
+					{"definition":["Die größte und aufregendste Metropole im Baltikum - Riga wird Sie begeistern. Die gotische Kathedrale und der unglaublich luxuriöse Jugendstil, die gemütlichen Cafés und Restaurants mit Weltklasse-Küche sind nur ein kleiner Teil, der Riga zu einem großartigen Urlaubsziel macht."]},
+					{"preis":[""]},
+					{"öffnung":[""]}
+				],
+				"Jurmala":[
+					{"definition":["Nur 20 Minuten von Riga entfernt liegt Jurmala, ein einzigartiger Badeort. Wenn Sie nach Unterhaltung suchen, dann fahren Sie zum Strand, aber in dem einzigartigen Spa mit einem verführerischen Angebot können Sie Ruhe, Schlammbäder und Massagen genießen. Jurmala ist ein großartiger Ort, um die Natur zu genießen, entlang der Kieferküste zu spazieren oder die ausdrucksstarken Holzchalets zu bewundern."]},
+					{"preis":[""]},
+					{"öffnung":[""]}
+				]
+			},
+			"possibilities":
+			[
+				{
+					"keyword": ["buchen", "buchung", "gebucht"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["planen", "planung", "geplant"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["empfehlen", "suchen", "erkundigen"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["sehenswürdigkeiten", "zu sehen", "besichtigen", "anschauliches", "kultur"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["wanderung", "wanderungen", "fußweg", "spazieren", "wege"],
+					"answer" : [
+					],
+					"multiple": [
+					]
+				}
+			]
 		},
 		{
 			"name":"litauen",
 			"season":["herbst", "winter"],
-			"character":["berge", "meer", "strand", "historisch"]
+			"character":["berge", "meer", "strand", "historisch"],
+			"sights":
+			{
+				"Nationalpark Dzukija":[
+					{"definition":["Der Dzukija-Nationalpark liegt Süd-Litauen, an der Grenze zu Weißrussland. Er ist der flächenmäßig größte Nationalpark Litauens und wurde 1991 gegründet. Etwa 90 Prozent der Fläche des Reservats sind bewaldet. Flüsse, Seen, Bäche und Moore sind prägend. Das Sumpfgebiet Cepkeliai ist das größte zusammenhängende Moor in Litauen. Kraniche, Adler, Wölfe, Elche und Schlangen kommen hier vor. Auf Holzplankenwegen kann man, begleitet von einem Führer, das Schutzgebiet erkunden und dabei die unvergleichliche Stille der Moorlandschaft auf sich wirken lassen. Die Gegend ist aber auch kulturhistorisch interessant. Schon vor 10.000 Jahren siedelten hier Menschen. Am Zusammenfluss von Nemunas und Merkis, in Merkyne, gibt es ein Heimatmuseum. Dortbefindet sich außerdem das Museum der Freiheitskämpfe, untergebracht in einer alten KGB-Zentrale. Das Informationszentrum des Nationalparks Dzukija befindet sich in Marcinkonys. Hier kann man auch Kanufahrten und Führungen buchen."]},
+					{"preis":[""]},
+					{"öffnung":[""]}
+				],
+				"Teufelsmuseum in Kaunas":[
+					{"definition":["Ein schauriger Ort: Rund 3.000 Exponate aus der ganzen Welt werden im Teufelsmuseum in Kaunas ausgestellt. Mit dabei: Hitler und Stalin in Teufelsgestalt. Das Museum ist angegliedert an das Mikalojus-Konstantinas-Čiurlionis Nationalmuseum, das 1921 gegründet wurde und über verschiedene Schwerpunkte verfügt."]},
+					{"preis":[""]},
+					{"öffnung":[""]}
+				]
+			},
+			"possibilities":
+			[
+				{
+					"keyword": ["buchen", "buchung", "gebucht"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["planen", "planung", "geplant"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["empfehlen", "suchen", "erkundigen"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["sehenswürdigkeiten", "zu sehen", "besichtigen", "anschauliches", "kultur"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["wanderung", "wanderungen", "fußweg", "spazieren", "wege"],
+					"answer" : [
+					],
+					"multiple": [
+					]
+				}
+			]
 		},
 		{
 			"name":"luxemburg",
 			"season":["sommer", "winter"],
-			"character":["berge", "meer", "strand", "historisch"]
+			"character":["berge", "meer", "strand", "historisch"],
+			"sights":
+			{
+				"Bockkasematten":[
+					{"definition":["Die Wahl der schönsten Sehenswürdigkeit Luxemburgs ist leicht: der Faszination der Bockkasematten kann man nur wenig entgegensetzen. Die Ringmauern mit den in Felsen geschlagenen Höhlen gehörten einst zur Festungsanlage von Luxemburg. Sie gehen auf das 17. Jahrhundert zurück und umfassten damals ein noch deutlich größeres Höhlensystem. Heute sind immerhin noch 17 km Kasematten erhalten, die sich über mehrere Stockwerke erstrecken."]},
+					{"preis":[""]},
+					{"öffnung":[""]}
+				],
+				"Palais Grand Ducal":[
+					{"definition":["Der Großherzogliche Palast war einst die Residenz des Großherzogs und wird immer noch für Staatsempfänge verwendet. Vor dem Gebäude patroullieren entsprechend die uniformierten Wachposten. In den Sommermonaten kommen Sie auch als einfacher Tourist in den Genuss eines Besuches, wenn auch ohne persönlichen Empfang vom Großherzog. Die stattliche Inneneinrichtung des imposanten Gebäudes macht das aber schnell wieder wett."]},
+					{"preis":[""]},
+					{"öffnung":[""]}
+				]
+			},
+			"possibilities":
+			[
+				{
+					"keyword": ["buchen", "buchung", "gebucht"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["planen", "planung", "geplant"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["empfehlen", "suchen", "erkundigen"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["sehenswürdigkeiten", "zu sehen", "besichtigen", "anschauliches", "kultur"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["wanderung", "wanderungen", "fußweg", "spazieren", "wege"],
+					"answer" : [
+					],
+					"multiple": [
+					]
+				}
+			]
 		},
 		{
 			"name":"malta",
 			"season":["frühling", "herbst"],
-			"character":["berge", "meer", "strand", "historisch"]
+			"character":["berge", "meer", "strand", "historisch"],
+			"sights":
+			{
+				"Marsaxlokk":[
+					{"definition":["Marsaxlokk ist ein malerisches Fischerdorf. Im Hafen liegen viele bunt bemalte Boote. Das perfekte Fotomotiv. Schlendere entlang der Promenade und lass dich einfach treiben. Wir empfanden den Ort als sehr angenehm und entspannend. Viele Restaurants bieten frische und leckere Fischgerichte – wie es eben in einem Fischerort sein soll. Wir haben uns in Ron’s Restaurant locken lassen und haben es nicht bereut. Lecker!"]},
+					{"preis":[""]},
+					{"öffnung":[""]}
+				],
+				"Il kalanka beach":[
+					{"definition":["Der Il Kalanka Beach ist ähnlich wie der Peter’s Pool. Traumhaftes Wasser und ein toller Spot, um sich im kühlen Nass zu erfrischen. Wir sind versehentlich zuerst an Peter’s Pool vorbei gefahren und dachten Il Kalanka Beach sei Peter’s Pool. Ist aber halb so wild, es ist an beiden Orten schön."]},
+					{"preis":[""]},
+					{"öffnung":[""]}
+				]
+			},
+			"possibilities":
+			[
+				{
+					"keyword": ["buchen", "buchung", "gebucht"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["planen", "planung", "geplant"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["empfehlen", "suchen", "erkundigen"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["sehenswürdigkeiten", "zu sehen", "besichtigen", "anschauliches", "kultur"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["wanderung", "wanderungen", "fußweg", "spazieren", "wege"],
+					"answer" : [
+					],
+					"multiple": [
+					]
+				}
+			]
 		},
 		{
 			"name":"polen",
 			"season":["herbst", "winter"],
-			"character":["berge", "meer", "strand", "historisch"]
+			"character":["berge", "meer", "strand", "historisch"],
+			"sights":
+			{
+				"Warschau":[
+					{"definition":["Die Altstadt Warschaus vereint verschiedene Architekturstile miteinander, weshalb sie 1980 zum UNESCO-Weltkulturerbe ernannt wurde. Neben der mittelalterlichen Johanneskathedrale finden Sie dort auch das Königsschloss, welches bis in das 18. Jahrhundert hinein Sitz der polnischen Könige war."]},
+					{"preis":[""]},
+					{"öffnung":[""]}
+				],
+				"Marienburg":[
+					{"definition":["Auf zur berühmten Marienburg! Die wunderschöne Ordensburg aus dem Mittelalter ist ein absolutes Muss für jeden Polen-Urlauber. Erbaut im 13. Jahrhundert am Fluss Nogat, gilt die riesige Burganlage heute als eine der bedeutendsten Sehenswürdigkeiten in Polen. 1997 wurde sie zu einem UNESCO-Weltkulturerbe ernannt und dient heute vor allem als Museum. Unter anderem beherbergt die Ordensburg ein Bernsteinmuseum."]},
+					{"preis":[""]},
+					{"öffnung":[""]}
+				]
+			},
+			"possibilities":
+			[
+				{
+					"keyword": ["buchen", "buchung", "gebucht"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["planen", "planung", "geplant"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["empfehlen", "suchen", "erkundigen"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["sehenswürdigkeiten", "zu sehen", "besichtigen", "anschauliches", "kultur"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["wanderung", "wanderungen", "fußweg", "spazieren", "wege"],
+					"answer" : [
+					],
+					"multiple": [
+					]
+				}
+			]
 		},
 		{
 			"name":"rumänien",
 			"season":["frühling", "winter"],
-			"character":["berge", "meer", "strand", "historisch"]
+			"character":["berge", "meer", "strand", "historisch"],
+			"sights":
+			{
+				"Moldauklöster in der Bukowina":[
+					{"definition":["Die Moldauklöster bestechen durch ihre einzigartigen farbenfrohen Fresken, die sowohl die Innen- und Außenwände als auch die Schutzmauern über und über bedecken. Viele der farbenprächtigen Gotteshäuser zählen seit 1993 bzw. 2010 zum Weltkulturerbe der UNESCO."]},
+					{"preis":[""]},
+					{"öffnung":[""]}
+				],
+				"Parlamentspalast in Bukarest":[
+					{"definition":["Der Parlamentspalast in Bukarest ist ist das größte Parlamentsgebäude der Welt und hält Platz Eins der größten Bauwerke Europas. Errichtet wurde der Parlamentspalast unter dem diktatorischen Staatspräsident Nicolae Ceausescu in den 1980er Jahren als „Haus des Volkes“. Die Ausmaße des Parlamentspalastes sind schier atemberaubend und sprengen alles jemals da Gewesene."]},
+					{"preis":[""]},
+					{"öffnung":[""]}
+				]
+			},
+			"possibilities":
+			[
+				{
+					"keyword": ["buchen", "buchung", "gebucht"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["planen", "planung", "geplant"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["empfehlen", "suchen", "erkundigen"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["sehenswürdigkeiten", "zu sehen", "besichtigen", "anschauliches", "kultur"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["wanderung", "wanderungen", "fußweg", "spazieren", "wege"],
+					"answer" : [
+					],
+					"multiple": [
+					]
+				}
+			]
 		},
 		{
 			"name":"slowakei",
 			"season":["frühling", "sommer"],
-			"character":["berge", "meer", "strand", "historisch"]
+			"character":["berge", "meer", "strand", "historisch"],
+			"sights":
+			{
+				"Bratislava":[
+					{"definition":["ich erwarten hier historische Gebäude, wunderschöne Kirchen und Burgen, eine charmante Altstadt (gleichzeitig auch sehr touristisch), coole Cafés und Restaurants sowie eine Menge Ausflugsziele rund um Bratislava. Wir empfehlen dir mindestens 2 Tage für die Stadt, um ganz in Ruhe ein paar Sehenswürdigkeiten zu erkunden. Unbedingt solltest du die Aussicht über die Stadt vom Observation Deck (auch UFO genannt) bestaunen. Halte außerdem Ausschau nach den bekannten Bronzefiguren, welche in der Stadt verteilt sind."]},
+					{"preis":[""]},
+					{"öffnung":[""]}
+				],
+				"Nationalpark Niedere Tatra":[
+					{"definition":["Wenn man eine Sache richtig gut in der Slowakei machen kann, dann ist es WANDERN! Das Land verfügt über 9 Nationalparke, wobei einer schöner und spannender ist wie der andere. Eine der schönsten Wanderungen haben wir im Nationalpark Niedere Tatra unternommen und dabei gigantisch schöne Aussichten genossen. Der Nationalpark in der Mittelslowakei beherbergt zahlreiche Höhlen, Gipfel, Täler, tiefe Canyons, Wälder und steile Felsen. Wir haben die Kammwanderung zwischen den Gipfeln Chopok und Dumbier gemacht und können dir diesen Trip nur ans Herz legen."]},
+					{"preis":[""]},
+					{"öffnung":[""]}
+				]
+			},
+			"possibilities":
+			[
+				{
+					"keyword": ["buchen", "buchung", "gebucht"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["planen", "planung", "geplant"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["empfehlen", "suchen", "erkundigen"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["sehenswürdigkeiten", "zu sehen", "besichtigen", "anschauliches", "kultur"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["wanderung", "wanderungen", "fußweg", "spazieren", "wege"],
+					"answer" : [
+					],
+					"multiple": [
+					]
+				}
+			]
 		},
 		{
 			"name":"slowenien",
 			"season":["herbst", "winter"],
-			"character":["berge", "meer", "strand", "historisch"]
+			"character":["berge", "meer", "strand", "historisch"],
+			"sights":
+			{
+				"Bled":[
+					{"definition":["Bled und der Bleder See mit der einzigen natürlichen Insel Sloweniens ziehen schon seit Jahren Liebhaber des Schönen an. Zur Insel mit der Kirche, deren Glocke eine besondere Hommage an die Liebe ist, fahren traditionelle Boote, die Pletna genannt werden. Den schönsten Blick auf den See mit der Insel und die umliegenden Alpengipfel bietet die auf einem Felsen über dem See thronende Burg. Die Schönheit von Bled bemerkten auch die beiden Medienriesen Lonely Planet und der Daily Mail, die es auf die Top 10 Reiseziele der Welt platzierten!"]},
+					{"preis":[""]},
+					{"öffnung":[""]}
+				],
+				"Die Grotte von Postojna":[
+					{"definition":["Die Grotte von Postojna gilt als die meistbesuchte Touristenhöhle der Welt und nicht umsonst. Eine Untergrundhöhlenbahn bringt Sie entlang der weltweit ersten Höhleneisenbahn ins Innere der Höhle, zwischen tausendjährige Tropfsteine, durch große Hallen und vorbei an versteckten Tunneln. Die 24 Kilometer lange Grotte von Postojna ist ein Ort, wo Sie persönlich »Drachenbabys« treffen können und wo unglaubliche Tiere schlüpfen: Grottenolme. In der Nähe der Grotte befindet sich die Burg Predjama, die größte Höhlenburg der Welt, in der die Legende des furchtlosen Räuberritters Erasmus von Luegg lebt."]},
+					{"preis":[""]},
+					{"öffnung":[""]}
+				]
+			},
+			"possibilities":
+			[
+				{
+					"keyword": ["buchen", "buchung", "gebucht"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["planen", "planung", "geplant"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["empfehlen", "suchen", "erkundigen"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["sehenswürdigkeiten", "zu sehen", "besichtigen", "anschauliches", "kultur"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["wanderung", "wanderungen", "fußweg", "spazieren", "wege"],
+					"answer" : [
+					],
+					"multiple": [
+					]
+				}
+			]
 		},
 		{
 			"name":"ungarn",
 			"season":["frühling", "winter"],
-			"character":["berge", "meer", "strand", "historisch"]
+			"character":["berge", "meer", "strand", "historisch"],
+			"sights":
+			{
+				"Parlamentsgebäude":[
+					{"definition":["Zu den bekanntesten Sehenswürdigkeiten der ungarischen Hauptstadt gehört mit Sicherheit das prachtvolle Parlamentsgebäude in Budapest. Der riesige Bau mit seinen dunkelroten Kuppeln und einer faszinierenden Fassade befindet sich an den Flussufern der Donau auf der Pest-Seite. Den besten Blick auf das Parlamentsgebäude hat man am Tag und vor allem auch in der Nacht, wenn das Gebäude beleuchtet wird, von der gegenüberliegenden Buda-Seite, wenn man die Donau überquert hat."]},
+					{"preis":[""]},
+					{"öffnung":[""]}
+				],
+				"Kettenbrücke":[
+					{"definition":["Sie verbindet die beiden Uferseiten der Donau miteinander und ist eines der berühmtesten Wahrzeichen der Stadt: Die Kettenbrücke ist eine echte Attraktion in Budapest. Die beiden Stadtteile Buda und Pest die durch die Donau entzweit werden, wurden 19. Jahrhundert mit der schönen Brücke an einer weiteren Stelle zusammengeführt. Majestätisch schwebt die Kettenbrücke über dem Fluss – die erste dauerhafte Brücke der ungarischen Metropole. Vor dem Bau der bekannten Brücke befand sich die nächstgelegene Überführungsmöglichkeit der Donau in Wien."]},
+					{"preis":[""]},
+					{"öffnung":[""]}
+				]
+			},
+			"possibilities":
+			[
+				{
+					"keyword": ["buchen", "buchung", "gebucht"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["planen", "planung", "geplant"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["empfehlen", "suchen", "erkundigen"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["sehenswürdigkeiten", "zu sehen", "besichtigen", "anschauliches", "kultur"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["wanderung", "wanderungen", "fußweg", "spazieren", "wege"],
+					"answer" : [
+					],
+					"multiple": [
+					]
+				}
+			]
 		},
 		{
 			"name":"deutschland",
 			"season":["sommer", "herbst"],
-			"character":["berge", "meer", "strand", "historisch"]
+			"character":["berge", "meer", "strand", "historisch"],
+			"sights":
+			{
+				"Schloss Neuschwanstein":[
+					{"definition":["Schloss Neuschwanstein ist international eine der bekanntesten Sehenswürdigkeit von Deutschland und eine der beliebtesten Sehenswürdigkeiten in Bayern. Jährlich kommen über 1,5 Millionen Touristen aus aller Welt, um sich das Märchenschloss anzuschauen. Seine Lage in den Ausläufern der Alpen macht es zusätzlich zu einem beliebten Reiseziel in Deutschland."]},
+					{"preis":[""]},
+					{"öffnung":[""]}
+				],
+				"Brandenburger Tor":[
+					{"definition":["Das Brandenburger Tor ist die Top-Sehenswürdigkeit in Berlin. Kaum eine Postkarte der Hauptstadt kommt ohne ein Abbild des fotogenen Tores aus. Erbaut wurde das Brandenburger Tor von 1789 bis 1793 als Abschluss der Prachtstraße der Dorotheenstadt."]},
+					{"preis":[""]},
+					{"öffnung":[""]}
+				]
+			},
+			"possibilities":
+			[
+				{
+					"keyword": ["buchen", "buchung", "gebucht"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["planen", "planung", "geplant"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["empfehlen", "suchen", "erkundigen"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["sehenswürdigkeiten", "zu sehen", "besichtigen", "anschauliches", "kultur"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["wanderung", "wanderungen", "fußweg", "spazieren", "wege"],
+					"answer" : [
+					],
+					"multiple": [
+					]
+				}
+			]
 		},
 		{
 			"name":"schweden",
 			"season":["herbst", "winter"],
-			"character":["berge", "meer", "strand", "historisch"]
-		}
-	],
-	"sights": [
-		{
-			"Kolosseum":[
-				{"definition": ["Es ist das Wahrzeichen von Rom, wenn nicht sogar von ganz Italien: das Kolosseum. Das imposante und weltberühmte architektonische Meisterwerk beeindruckt mit einem Umfang von 527 Metern und einer Höhe von 48 Metern. Heute ist das Kolosseum ein Schmuckstück, damals war es blutiger Schauplatz bestialischer Gladiatorenkämpfe zu Freuden des damaligen Kaiserhauses."]},
-				{"preis": ["12€ Erwachsene, 7,50€ Jugendliche (18-25 Jahre, EU-Bürger), kostenfrei für alle unter 18 Jahre (gilt für Forum Romanum und Kolosseum, 2 Tage gültig)"]},
-				{"öffnung": ["täglich ab 8.30 Uhr geöffnet, Schließungszeit ändert sich saisonal"]}
-			],
-			"Forum Romanum":[
-				{"definition": ["Besucht ihr das Kolosseum in Rom, könnt ihr direkt auch eine weitere Sehenswürdigkeit in Italien mitnehmen. Das Forum Romanum in Rom ist wie die Agora in Athen: ehemaliges wirtschaftliches, politisches, religiöses und kulturelles Zentrum der Stadt. Hier tummelten sich die Römer, sie handelten, fällten Urteile und legten ihren Lebensmittelpunkt hierher. Kaum vorstellbar, wenn ihr euch das Forum Romanum heute mit all den Ruinen anseht."]},
-				{"preis": ["12€ Erwachsene, 7,50€ Jugendliche (18-25 Jahre, EU-Bürger), kostenfrei für alle unter 18 Jahre"]},
-				{"öffnung": ["täglich ab 8.30 Uhr geöffnet, Schließungszeit ändert sich saisonal"]}
-			],
-			"Schiefer Turm von Pisa":[
-				{"definition": ["Kaum ein anderes Bauwerk steht so sehr für eine Stadt wie der Schiefe Turm von Pisa. Bereits nach Bau der dritten Etage im 12. Jahrhundert begann die Neigung des Turms. Schuld an der Schieflage war der Untergrund. Er war nicht fest genug, um den schweren Turm beziehungsweise die ersten Etagen zu tragen."]},
-				{"preis": ["18€, keine Ermäßigung für Kinder"]},
-				{"öffnung": ["täglich 10-18 Uhr"]}
-			]
-		},
-		{
-			"Schloss Versailles":[
-				{"definition":["Es ist eine der größten Palastanlagen Europas und war von Mitte des 17. Jahrhunderts bis zum Ausbruch der Französischen Revolution die Residenz der französischen Könige."]},
-				{"preis":["Der Eintritt kostet 20 Euro"]},
-				{"öffnung":["dienstags bis sonntags von 9.30 bis 17.30 Uhr"]}
-			],
-			"Eiffelturm":[
-				{"definition":["Erbaut wurde er von 1887 bis 1889 als Eingangstor für die Weltausstellung und als Erinnerung an den 100. Jahrestag der Französischen Revolution.Benannt ist die berühmte Stahlkonstruktion nach ihrem Erbauer Gustave Eiffel."]},
-				{"preis":["Erwachsene zahlen 25 Euro, Kinder und junge Erwachsene von 12 bis 24 Jahren zahlen 12,40 Euro, ermäßigter Eintritt kostet 6,30 Euro und Kinder bis 4 Jahre haben freien Zugang"]},
-				{"öffnung":["vom 15. Juni bis 1. September täglich von 9 bis 0.45 Uhr, im Rest des Jahres täglich von 9.30 bis 23.45 Uhr"]}
-			]
-		},
-		{
-			"Sagrada Familia":[
-				{"definition":["Die Sagrada Familia ist das Wahrzeichen der weltgewandten Stadt Barcelona und wird täglich von Millionen von internationalen Besuchern bestaunt."]},
-				{"preis":["Kirche: 15€ (nur online erwerblich) Kirche & Audioguide: 22€ Kirche, Museum & Audioguide: 24€ Kirche & Führung: 24€ Kirche, Turmbesuch & Audioguide: 29€"]},
-				{"öffnung":["Nov.-Feb. 9-18 Uhr Mrz. 9-19 Uhr Apr.-Sept. 9-20 Uhr Okt. 9-19 Uhr"]}
-			],
-			"Alhambra":[
-				{"definition":["Bei einer Reise nach Andalusien sollte ein Besuch zur Alhambra Festung unbedingt auf eurer To-Do Liste stehen. Geschützt durch Berge und umgeben von Wäldern thront die „rote“ Burg, die nach den Farben ihrer Mauern benannt und im Mittelalter von arabischen Herrschern erbaut wurde, im ältesten Gebiet der Stadt auf dem Sabikah-Hügel."]},
-				{"preis":["Erwachsene 14€ kostenfrei für Kinder unter 12 Jahren Abendbesichtigung 5-8€"]},
-				{"öffnung":["1. Apr.-14. Okt.: Mo-So 8.30-20 Uhr, Di-Sa 22-23.30 Uhr (Abendbesichtigung) 15. Okt.-31. Mrz.: Mo-So 8.30-18 Uhr, Fr & Sa 20-21.30 Uhr 25. Dez. & 1. Jan.: geschlossen"]}
-			]
-		},
-		{
-			"Landschaft um Sintra":[
-				{"definition":["Die Landschaft hier ist wie aus der Seite eines Märchenbuches der Gebrüder Grimm herausgerissen: Ein dicht bewachsener Zauberwald neben einem exotischen Schlossgarten und dazu ein majestätischer und knallbunter Palast. Das alles und noch viel mehr, solltest du bei einem Tagestrip in dieser Region auf jeden Fall erkunden."]},
-				{"preis":["Kostenlos"]},
-				{"öffnung":["Jederzeit"]}
-			],
-			"Wallfahrtskirche auf dem Monta Santa Luzia":[
-				{"definition":["Obwohl die Wallfahrtskirche auf dem Monte Santa Luzia in Viana do Castello recht alt aussieht, wurde sie doch erst im Jahr 1904 erbaut. Du erreichst den Berg per Seilbahn oder Auto. Wenn du genug Zeit hast, kannst du auch die Treppe nutzen, die den Berg hinauf führt."]},
-				{"preis":["Kostenlos"]},
-				{"öffnung":["Jederzeit"]}
-			]
-		},
-		{
-			"Schloss Schönbrunn":[
-				{"definition":["Die wunderschöne spätbarocke Schlossanlage in Österreichs Hauptstadt gehört zu den beliebtesten Sehenswürdigkeiten in Wien und führt deshalb auch zu Recht unsere Liste an. Tauchen Sie bei einer Besichtigung der kulturhistorisch bedeutenden Anlage in die Geschichte seiner prominenten Bewohner ein."]},
-				{"preis":["Kostenlos"]},
-				{"öffnung":["9:00 - 20:00"]}
-			],
-			"Festung Hohensalzburg":[
-				{"definition":["Eine Besichtigung der Burg führt durch zahlreiche original hergerichtete Zimmer mit detailreicher Wand- und Deckenverzierung sowie vorbei an unzähligen mittelalterlichen Exponaten. Interessant sind auch die Folterkammer oder das Salzmagazin. Auch die Außenanlage kann erkundet werden. Da die Festung in 542 m Höhe erbaut wurde, bietet sich Ihnen von hier ein beeindruckender Blick über Salzburg."]},
-				{"preis":["Kostenlos"]},
-				{"öffnung":["9:00 - 20:00"]}
-			]
-		},
-		{
-			"Prager Zoo":[
-				{"definition":["Der Prager Zoo befindet sich auf einem Hügel im Stadtteil Troja am Moldau-Ufer. Hier leben circa 5.000 Tiere von rund 700 verschiedenen Tierarten. Als Highlights gelten die Komodowarane, asiatische Elefanten und die seltenen Przewalskipferde, die in den Steppen Zentralasiens heimisch sind. Entdecken Sie weitere Höhepunkte bei einer Fahrt mit der Miniaturseilbahn."]},
-				{"preis":["ab 34,88€ pro Erwachsenem (Der Preis variiert je nach Gruppengröße.)"]},
-				{"öffnung":["09:00 – 19:00"]}
-			],
-			"Prager Altstadt":[
-				{"definition":["Der Altstädter Ring gilt als historisches und kulturelles Zentrum der Prager Altstadt und eignet sich hervorragend als Startpunkt für einen Rundgang. In der Platzmitte thront das Jan-Hus-Denkmal, welches zu Ehren des Reformators errichtet wurde. Drumherum befinden sich wichtige Gebäude wie das Altstädter Rathaus und die Kirche St. Maria vor dem Teyn."]},
-				{"preis":["mit Führung ab 38,00€ pro Erwachsenem"]},
-				{"öffnung":["Immer"]}
-			]
-		},
-		{
-			"Amsterdam":[
-				{"definition":["Amsterdam ist nicht nur die Hauptstadt der Niederlande, sondern auch eine der schönsten Städte in Holland mit einer Vielzahl an Sehenswürdigkeiten. Sie ist mit über 800.000 Einwohnern das Aushängeschild und die bevölkerungsreichste Metropole des Königreichs der Niederlande."]},
-				{"preis":["Kostenlos"]},
-				{"öffnung":["Immer"]}
-			],
-			"Anne-Frank-Haus in Amsterdam":[
-				{"definition":["Es ist eine Gedenkstätte und Museum zugleich zu Ehren des jüdischen Holocaust Opfers Anne Frank. Anne Frank Haus in AmsterdamDie ist während der Judenverfolgung in Deutschland in die Niederlande geflohen. Das Museum zeigt, wie Anne Frank und ihre Familie damals in der Prinsengracht 263 lebte und sichversteckte."]},
-				{"preis":[""]},
-				{"öffnung":["09:00 – 19:00"]}
-			]
-		},
-		{
-			"Manneken-Pis":[
-				{"definition":["Es ist DAS Wahrzeichen Belgiens und eine der Anlaufstellen für Touristen aus aller Welt: Der Manneken Pis in Brüssel – der pinkelnde kleine Mann. Die 61 cm hohe Statue besteht aus Bronze und ziert den Brunnen an der Ecke Rue de l’Etuve und Rue des Grands Carmes. Ein Besuch hier lässt Sie schmunzeln, aber passen Sie auf, dass Sie nicht nass werden!"]},
-				{"preis":[""]},
-				{"öffnung":[""]}
-			],
-			"Atomium":[
-				{"definition":["Das Atomium steht für eine friedliche Nutzung der Kernenergie und ist beispielhaft für das Atomzeitalter. Besucher dieses eindrucksvollen Wahrzeichens können die untersten drei Turm-Kugeln betreten und unterschiedlichste Ausstellungen bestaunen. Perfekt für jeden, der seinen Urlaub in Belgien mit ein wenig Wissenschaft verbinden möchte."]},
-				{"preis":[""]},
-				{"öffnung":[""]}
-			]
-		},
-		{
-			"Tallinn":[
-				{"definition":["Direkt an der Ostsee liegt das kulturelle Zentrum des Landes. Die Geschichte der Stadt begann am Domberg. Hier ließen sich die ersten Siedler nieder, weil sie von dort aus die Küste gut im Blick hatten. Heute blickst du von dort aus auf die Dächer Tallinns. Außerdem erwartet dich am Domberg die beeindruckende Alexander-Newski-Kathedrale."]},
-				{"preis":[""]},
-				{"öffnung":[""]}
-			],
-			"Insel Hiiumaa":[
-				{"definition":["Auf der zweitgrößten Insel Estlands erwarten dich einsame Strände und unberührte Natur. Auf Hiiumaa kannst du richtig abschalten und zwischen den endlosen Wäldern wandern. Wanderer, aber auch Segler und Surfer sind hier am richtigen Platz. Neben der Inselhauptstadt gibt es noch ein paar kleine Orte auf der Insel. Vor allem sehenswert sind die zahlreichen Leuchttürme. Einer der ältesten Türme ist der Kõpu Tuletorn, auf dem du einen großartigen Blick über die Insel ergatterst."]},
-				{"preis":[""]},
-				{"öffnung":[""]}
-			]
-		},
-		{
-			"Helsinki":[
-				{"definition":["Die lebendige Hafenstadt bezaubert Besucher mit wunderschönen Inseln, grünen Parks und gemütlichen Straßencafés. Abwechslungsreiche Architektur und eindrucksvolle Kathedralen prägen das Stadtbild. In der Hauptstadt Finnlands gibt es einiges zu entdecken: Vom Kauppatori-Markt mit seinen leckeren Lachsbrötchen über die beeindruckende Uspenski-Kathedrale bis hin zu einer Fahrt mit dem SkyWheel, einem verglasten Riesenrad. Hier ist für jeden etwas dabei!"]},
-				{"preis":[""]},
-				{"öffnung":[""]}
-			],
-			"Linnansaari Nationalpark":[
-				{"definition":["Der Linnansaari Nationalpark befindet sich in der Region Savo. Dieses Naturparadies wurde 1956 gegründet, um Flora und Fauna der Finnischen Seenplatte zu schützen. Mehr als 130 Inseln zählen zu dem Park, der mit Guide oder auch selbständig erwandert werden kann. Die abwechslungsreiche Landschaft aus Wäldern, Wiesen, Felsen und Wasser lädt das ganze Jahr über zu Erkundungstouren ein."]},
-				{"preis":[""]},
-				{"öffnung":[""]}
-			]
-		},
-		{
-			"Athener Akropolis":[
-				{"definition":["Hoch über der Stadt Athen ragt die wohl bekannteste Sehenswürdigkeit Griechenlands: die Akropolis. Die Ruinen der ehemaligen Stadtfestung sind das Wahrzeichen der Stadt und ein Schmuckstück antiker Architektur, die ihr im Griechenland Urlaub unbedingt besuchen solltet."]},
-				{"preis":["20€, ermäßigt 10€"]},
-				{"öffnung":["8-20 Uhr (April-Oktober) / 8-17 Uhr (November-März)"]}
-			],
-			"Meteora Klöster":[
-				{"definition":["Die Klöster wurden auf Sandsteinen errichtet und scheinen als würden sie über den umliegenden Schluchten schweben. Sechs der Klöster, die ihr besichtigen könnt, sind noch bewohnt."]},
-				{"preis":["3€ je Kloster, Kinder haben kostenlosen Eintritt"]},
-				{"öffnung":["unterschiedlich, in der Regel sind alle Klöster täglich ab 9 Uhr geöffnet"]}
-			]
-		},
-		{
-			"Trinity College in Dublin":[
-				{"definition":["Eine der bekanntesten Sehenswürdigkeiten von Irland ist das Trinity College in der Hauptstadt Dublin. Besonders die Alte Bibliothek der 1592 gegründeten Universität ist es, welche die Touristen anlockt. Hier lagern rund 4,5 Millionen Bände sowie eine große Sammlung historischer Handschriften, Manuskripte, Inkunabeln und frühe Drucke der Bibel."]},
-				{"preis":["Erwachsene zahlen 10 Euro, Kinder unter 12 Jahren haben freien Eintritt"]},
-				{"öffnung":["Von Mai bis September montags bis samstags von 8.30 bis 17 Uhr und sonntags von 9.30 bis 17 Uhr. Von Oktober bis April montags bis samstags von 9.30 bis 17 Uhr und sonntags von 12 bis 16.30 Uhr"]}
-			],
-			"Cliffs of Moher":[
-				{"definition":["Die berühmte Steilküste an der Südwestküste von Irland gehört zu den bekanntesten Irland Sehenswürdigkeiten und darf deswegen auf dieser Liste natürlich nicht fehlen. Auf einer Strecke von rund acht Kilometern ziehen sich die Cliffs of Moher entlang der atlantischen Küste. An vielen Stellen ragen sie nahezu senkrecht nach oben. Ihre Höhe liegt zwischen 120 und 214 Metern."]},
-				{"preis":["Erwachsene ab 16 Jahren zahlen 6 Euro. Kinder unter 16 Jahren haben freien Eintritt. Studenten, Schwerbehinderte und Personen über 65 Jahren zahlen 4,50 Euro"]},
-				{"öffnung":["Von November bis Februar täglich von 9 bis 17 Uhr. Von März bis April und von September bis Oktober täglich von 8 bis 19 Uhr. In den Monaten Mai bis August täglich von 8 bis 21 Uhr"]}
-			]
-		},
-		{
-			"Nationalpark Plitvicer Seen":[
-				{"definition":["Er ist der größte und älteste Nationalpark in Kroatien und wohl einer der Schönsten in ganz Europa. Der Nationalpark Plitvicer Seen liegt im Nordosten von Kroatien und ist für die meisten Kroatienurlauber ein absolutes Muss."]},
-				{"preis":[""]},
-				{"öffnung":[""]}
-			],
-			"Dubrovnik":[
-				{"definition":["Die „Perle an der Adria“, das ist Dubrovnik. Die einmalig schöne Altstadt sucht ihresgleichen und lockt jedes Jahr unzählige Touristen an. Egal, ob ihr einen Städtetrip nach Dubrovnik plant oder euch in der Nähe ein Ferienhaus an der Küste in Kroatien nehmt, dort werdet ihr garantiert eine unvergessliche Zeit erleben."]},
-				{"preis":[""]},
-				{"öffnung":[""]}
-			]
-		},
-		{
-			"Riga":[
-				{"definition":["Die größte und aufregendste Metropole im Baltikum - Riga wird Sie begeistern. Die gotische Kathedrale und der unglaublich luxuriöse Jugendstil, die gemütlichen Cafés und Restaurants mit Weltklasse-Küche sind nur ein kleiner Teil, der Riga zu einem großartigen Urlaubsziel macht."]},
-				{"preis":[""]},
-				{"öffnung":[""]}
-			],
-			"Jurmala":[
-				{"definition":["Nur 20 Minuten von Riga entfernt liegt Jurmala, ein einzigartiger Badeort. Wenn Sie nach Unterhaltung suchen, dann fahren Sie zum Strand, aber in dem einzigartigen Spa mit einem verführerischen Angebot können Sie Ruhe, Schlammbäder und Massagen genießen. Jurmala ist ein großartiger Ort, um die Natur zu genießen, entlang der Kieferküste zu spazieren oder die ausdrucksstarken Holzchalets zu bewundern."]},
-				{"preis":[""]},
-				{"öffnung":[""]}
-			]
-		},
-		{
-			"Nationalpark Dzukija":[
-				{"definition":["Der Dzukija-Nationalpark liegt Süd-Litauen, an der Grenze zu Weißrussland. Er ist der flächenmäßig größte Nationalpark Litauens und wurde 1991 gegründet. Etwa 90 Prozent der Fläche des Reservats sind bewaldet. Flüsse, Seen, Bäche und Moore sind prägend. Das Sumpfgebiet Cepkeliai ist das größte zusammenhängende Moor in Litauen. Kraniche, Adler, Wölfe, Elche und Schlangen kommen hier vor. Auf Holzplankenwegen kann man, begleitet von einem Führer, das Schutzgebiet erkunden und dabei die unvergleichliche Stille der Moorlandschaft auf sich wirken lassen. Die Gegend ist aber auch kulturhistorisch interessant. Schon vor 10.000 Jahren siedelten hier Menschen. Am Zusammenfluss von Nemunas und Merkis, in Merkyne, gibt es ein Heimatmuseum. Dortbefindet sich außerdem das Museum der Freiheitskämpfe, untergebracht in einer alten KGB-Zentrale. Das Informationszentrum des Nationalparks Dzukija befindet sich in Marcinkonys. Hier kann man auch Kanufahrten und Führungen buchen."]},
-				{"preis":[""]},
-				{"öffnung":[""]}
-			],
-			"Teufelsmuseum in Kaunas":[
-				{"definition":["Ein schauriger Ort: Rund 3.000 Exponate aus der ganzen Welt werden im Teufelsmuseum in Kaunas ausgestellt. Mit dabei: Hitler und Stalin in Teufelsgestalt. Das Museum ist angegliedert an das Mikalojus-Konstantinas-Čiurlionis Nationalmuseum, das 1921 gegründet wurde und über verschiedene Schwerpunkte verfügt."]},
-				{"preis":[""]},
-				{"öffnung":[""]}
-			]
-		},
-		{
-			"Bockkasematten":[
-				{"definition":["Die Wahl der schönsten Sehenswürdigkeit Luxemburgs ist leicht: der Faszination der Bockkasematten kann man nur wenig entgegensetzen. Die Ringmauern mit den in Felsen geschlagenen Höhlen gehörten einst zur Festungsanlage von Luxemburg. Sie gehen auf das 17. Jahrhundert zurück und umfassten damals ein noch deutlich größeres Höhlensystem. Heute sind immerhin noch 17 km Kasematten erhalten, die sich über mehrere Stockwerke erstrecken."]},
-				{"preis":[""]},
-				{"öffnung":[""]}
-			],
-			"Palais Grand Ducal":[
-				{"definition":["Der Großherzogliche Palast war einst die Residenz des Großherzogs und wird immer noch für Staatsempfänge verwendet. Vor dem Gebäude patroullieren entsprechend die uniformierten Wachposten. In den Sommermonaten kommen Sie auch als einfacher Tourist in den Genuss eines Besuches, wenn auch ohne persönlichen Empfang vom Großherzog. Die stattliche Inneneinrichtung des imposanten Gebäudes macht das aber schnell wieder wett."]},
-				{"preis":[""]},
-				{"öffnung":[""]}
-			]
-		},
-		{
-			"Marsaxlokk":[
-				{"definition":["Marsaxlokk ist ein malerisches Fischerdorf. Im Hafen liegen viele bunt bemalte Boote. Das perfekte Fotomotiv. Schlendere entlang der Promenade und lass dich einfach treiben. Wir empfanden den Ort als sehr angenehm und entspannend. Viele Restaurants bieten frische und leckere Fischgerichte – wie es eben in einem Fischerort sein soll. Wir haben uns in Ron’s Restaurant locken lassen und haben es nicht bereut. Lecker!"]},
-				{"preis":[""]},
-				{"öffnung":[""]}
-			],
-			"Il kalanka beach":[
-				{"definition":["Der Il Kalanka Beach ist ähnlich wie der Peter’s Pool. Traumhaftes Wasser und ein toller Spot, um sich im kühlen Nass zu erfrischen. Wir sind versehentlich zuerst an Peter’s Pool vorbei gefahren und dachten Il Kalanka Beach sei Peter’s Pool. Ist aber halb so wild, es ist an beiden Orten schön."]},
-				{"preis":[""]},
-				{"öffnung":[""]}
-			]
-		},
-		{
-			"Warschau":[
-				{"definition":["Die Altstadt Warschaus vereint verschiedene Architekturstile miteinander, weshalb sie 1980 zum UNESCO-Weltkulturerbe ernannt wurde. Neben der mittelalterlichen Johanneskathedrale finden Sie dort auch das Königsschloss, welches bis in das 18. Jahrhundert hinein Sitz der polnischen Könige war."]},
-				{"preis":[""]},
-				{"öffnung":[""]}
-			],
-			"Marienburg":[
-				{"definition":["Auf zur berühmten Marienburg! Die wunderschöne Ordensburg aus dem Mittelalter ist ein absolutes Muss für jeden Polen-Urlauber. Erbaut im 13. Jahrhundert am Fluss Nogat, gilt die riesige Burganlage heute als eine der bedeutendsten Sehenswürdigkeiten in Polen. 1997 wurde sie zu einem UNESCO-Weltkulturerbe ernannt und dient heute vor allem als Museum. Unter anderem beherbergt die Ordensburg ein Bernsteinmuseum."]},
-				{"preis":[""]},
-				{"öffnung":[""]}
-			]
-		},
-		{
-			"Moldauklöster in der Bukowina":[
-				{"definition":["Die Moldauklöster bestechen durch ihre einzigartigen farbenfrohen Fresken, die sowohl die Innen- und Außenwände als auch die Schutzmauern über und über bedecken. Viele der farbenprächtigen Gotteshäuser zählen seit 1993 bzw. 2010 zum Weltkulturerbe der UNESCO."]},
-				{"preis":[""]},
-				{"öffnung":[""]}
-			],
-			"Parlamentspalast in Bukarest":[
-				{"definition":["Der Parlamentspalast in Bukarest ist ist das größte Parlamentsgebäude der Welt und hält Platz Eins der größten Bauwerke Europas. Errichtet wurde der Parlamentspalast unter dem diktatorischen Staatspräsident Nicolae Ceausescu in den 1980er Jahren als „Haus des Volkes“. Die Ausmaße des Parlamentspalastes sind schier atemberaubend und sprengen alles jemals da Gewesene."]},
-				{"preis":[""]},
-				{"öffnung":[""]}
-			]
-		},
-		{
-			"Bratislava":[
-				{"definition":["ich erwarten hier historische Gebäude, wunderschöne Kirchen und Burgen, eine charmante Altstadt (gleichzeitig auch sehr touristisch), coole Cafés und Restaurants sowie eine Menge Ausflugsziele rund um Bratislava. Wir empfehlen dir mindestens 2 Tage für die Stadt, um ganz in Ruhe ein paar Sehenswürdigkeiten zu erkunden. Unbedingt solltest du die Aussicht über die Stadt vom Observation Deck (auch UFO genannt) bestaunen. Halte außerdem Ausschau nach den bekannten Bronzefiguren, welche in der Stadt verteilt sind."]},
-				{"preis":[""]},
-				{"öffnung":[""]}
-			],
-			"Nationalpark Niedere Tatra":[
-				{"definition":["Wenn man eine Sache richtig gut in der Slowakei machen kann, dann ist es WANDERN! Das Land verfügt über 9 Nationalparke, wobei einer schöner und spannender ist wie der andere. Eine der schönsten Wanderungen haben wir im Nationalpark Niedere Tatra unternommen und dabei gigantisch schöne Aussichten genossen. Der Nationalpark in der Mittelslowakei beherbergt zahlreiche Höhlen, Gipfel, Täler, tiefe Canyons, Wälder und steile Felsen. Wir haben die Kammwanderung zwischen den Gipfeln Chopok und Dumbier gemacht und können dir diesen Trip nur ans Herz legen."]},
-				{"preis":[""]},
-				{"öffnung":[""]}
-			]
-		},
-		{
-			"Bled":[
-				{"definition":["Bled und der Bleder See mit der einzigen natürlichen Insel Sloweniens ziehen schon seit Jahren Liebhaber des Schönen an. Zur Insel mit der Kirche, deren Glocke eine besondere Hommage an die Liebe ist, fahren traditionelle Boote, die Pletna genannt werden. Den schönsten Blick auf den See mit der Insel und die umliegenden Alpengipfel bietet die auf einem Felsen über dem See thronende Burg. Die Schönheit von Bled bemerkten auch die beiden Medienriesen Lonely Planet und der Daily Mail, die es auf die Top 10 Reiseziele der Welt platzierten!"]},
-				{"preis":[""]},
-				{"öffnung":[""]}
-			],
-			"Die Grotte von Postojna":[
-				{"definition":["Die Grotte von Postojna gilt als die meistbesuchte Touristenhöhle der Welt und nicht umsonst. Eine Untergrundhöhlenbahn bringt Sie entlang der weltweit ersten Höhleneisenbahn ins Innere der Höhle, zwischen tausendjährige Tropfsteine, durch große Hallen und vorbei an versteckten Tunneln. Die 24 Kilometer lange Grotte von Postojna ist ein Ort, wo Sie persönlich »Drachenbabys« treffen können und wo unglaubliche Tiere schlüpfen: Grottenolme. In der Nähe der Grotte befindet sich die Burg Predjama, die größte Höhlenburg der Welt, in der die Legende des furchtlosen Räuberritters Erasmus von Luegg lebt."]},
-				{"preis":[""]},
-				{"öffnung":[""]}
-			]
-		},
-		{
-			"Parlamentsgebäude":[
-				{"definition":["Zu den bekanntesten Sehenswürdigkeiten der ungarischen Hauptstadt gehört mit Sicherheit das prachtvolle Parlamentsgebäude in Budapest. Der riesige Bau mit seinen dunkelroten Kuppeln und einer faszinierenden Fassade befindet sich an den Flussufern der Donau auf der Pest-Seite. Den besten Blick auf das Parlamentsgebäude hat man am Tag und vor allem auch in der Nacht, wenn das Gebäude beleuchtet wird, von der gegenüberliegenden Buda-Seite, wenn man die Donau überquert hat."]},
-				{"preis":[""]},
-				{"öffnung":[""]}
-			],
-			"Kettenbrücke":[
-				{"definition":["Sie verbindet die beiden Uferseiten der Donau miteinander und ist eines der berühmtesten Wahrzeichen der Stadt: Die Kettenbrücke ist eine echte Attraktion in Budapest. Die beiden Stadtteile Buda und Pest die durch die Donau entzweit werden, wurden 19. Jahrhundert mit der schönen Brücke an einer weiteren Stelle zusammengeführt. Majestätisch schwebt die Kettenbrücke über dem Fluss – die erste dauerhafte Brücke der ungarischen Metropole. Vor dem Bau der bekannten Brücke befand sich die nächstgelegene Überführungsmöglichkeit der Donau in Wien."]},
-				{"preis":[""]},
-				{"öffnung":[""]}
-			]
-		},
-		{
-			"Schloss Neuschwanstein":[
-				{"definition":["Schloss Neuschwanstein ist international eine der bekanntesten Sehenswürdigkeit von Deutschland und eine der beliebtesten Sehenswürdigkeiten in Bayern. Jährlich kommen über 1,5 Millionen Touristen aus aller Welt, um sich das Märchenschloss anzuschauen. Seine Lage in den Ausläufern der Alpen macht es zusätzlich zu einem beliebten Reiseziel in Deutschland."]},
-				{"preis":[""]},
-				{"öffnung":[""]}
-			],
-			"Brandenburger Tor":[
-				{"definition":["Das Brandenburger Tor ist die Top-Sehenswürdigkeit in Berlin. Kaum eine Postkarte der Hauptstadt kommt ohne ein Abbild des fotogenen Tores aus. Erbaut wurde das Brandenburger Tor von 1789 bis 1793 als Abschluss der Prachtstraße der Dorotheenstadt."]},
-				{"preis":[""]},
-				{"öffnung":[""]}
-			]
-		},
-		{
-			"Das Nordlicht":[
-				{"definition":["Das Polarlicht ist eine Sehenswürdigkeit, für die du Glück und Geduld brauchst. Kiruna und Abisko sind die Reiseziele, wo die Chance am größten ist. Tagsüber erkundest du den Nationalpark auf Schneeschuhen, nachts wartest du auf dein grünes Wunder."]},
-				{"preis":[""]},
-				{"öffnung":[""]}
-			],
-			"Schloss Gripsholm":[
-				{"definition":["Unter die besten Reisetipps für Schweden gehört auf jeden Fall ein Schloss, nur welches? Gripsholm ist ein sehenswertes Märchenschloss mit verwinkelten Gängen, einem Theater, runden Türmen und einer Geschichte voller Intrigen."]},
-				{"preis":[""]},
-				{"öffnung":[""]}
+			"character":["berge", "meer", "strand", "historisch"],
+			"sights":
+			{
+				"Das Nordlicht":[
+					{"definition":["Das Polarlicht ist eine Sehenswürdigkeit, für die du Glück und Geduld brauchst. Kiruna und Abisko sind die Reiseziele, wo die Chance am größten ist. Tagsüber erkundest du den Nationalpark auf Schneeschuhen, nachts wartest du auf dein grünes Wunder."]},
+					{"preis":[""]},
+					{"öffnung":[""]}
+				],
+				"Schloss Gripsholm":[
+					{"definition":["Unter die besten Reisetipps für Schweden gehört auf jeden Fall ein Schloss, nur welches? Gripsholm ist ein sehenswertes Märchenschloss mit verwinkelten Gängen, einem Theater, runden Türmen und einer Geschichte voller Intrigen."]},
+					{"preis":[""]},
+					{"öffnung":[""]}
+				]
+			},
+			"possibilities":
+			[
+				{
+					"keyword": ["buchen", "buchung", "gebucht"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["planen", "planung", "geplant"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["empfehlen", "suchen", "erkundigen"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["sehenswürdigkeiten", "zu sehen", "besichtigen", "anschauliches", "kultur"], 
+					"answer" : [
+					],
+					"multiple": [
+					]
+				},
+				{
+					"keyword": ["wanderung", "wanderungen", "fußweg", "spazieren", "wege"],
+					"answer" : [
+					],
+					"multiple": [
+					]
+				}
 			]
 		}
 	]

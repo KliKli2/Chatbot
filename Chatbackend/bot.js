@@ -1,6 +1,7 @@
 'use strict'
 
 var WebSocketClient = require('websocket').client
+var dict = require("./bot.json")
 
 /**
  * bot ist ein einfacher Websocket Chat Client
@@ -13,9 +14,9 @@ class bot {
 	 * Bitte beachten Sie, dass die Server IP hardcodiert ist. Sie müssen sie umsetzten
 	 */
 	constructor () {
-		this.dict = require("./bot.json")
 		this.usedKeyWords = []
 		this.name = "Chatbot"
+		this.desiredCountry = []
 		this.links = []
 		this.images = []
 
@@ -72,7 +73,7 @@ class bot {
 					connection.sendUTF('{"type": "msg", "name": "' + 
 						'Chatbot' + 
 						'", "msg": "' + 
-						'Guten Tag' + 
+						dict.greetings[Math.floor(Math.random()*dict.greetings.length)] + 
 						'", "images":"' + 
 						[] + 
 						'", "links":"' + 
@@ -99,8 +100,8 @@ class bot {
 	getCountryWithCharacteristic(character){
 		var ret = []
 		for(var i in countries){
-			if(this.dict.countries[i].character.includes(character)){
-				ret.push(this.dict.countries[i].name)
+			if(dict.countries[i].character.includes(character)){
+				ret.push(dict.countries[i].name)
 			}
 		}
 		return ret
@@ -112,8 +113,8 @@ class bot {
 	getCountryInSeason(season){
 		var ret = []
 		for(var i in countries){
-			if(this.dict.countries[i].season.includes(season)){
-				ret.push(this.dict.countries[i].name)
+			if(dict.countries[i].season.includes(season)){
+				ret.push(dict.countries[i].name)
 			}
 		}
 		return ret
@@ -134,15 +135,15 @@ class bot {
 			return '{"type": "msg", "name": "' + 
 				this.name + 
 				'", "msg": "' + 
-				this.getRandomElement(this.dict.noResponse) + 
+				this.getRandomElement(dict.noResponse) + 
 				'", "images":"' + 
 				this.images + 
 				'", "links":"' + 
 				this.links +
 				'"}'
 		}
-		msg = msg.replace("RSEASON", this.getRandomElement(this.dict.seasons))
-		msg = msg.replace("RCHARACTER", this.getRandomElement(this.dict.characters))
+		msg = msg.replace("RSEASON", this.getRandomElement(dict.seasons))
+		msg = msg.replace("RCHARACTER", this.getRandomElement(dict.characters))
 		msg = msg.replace("RCOUNTRY", this.getRandomElement(this.getCountryNames()))
 		if(msg.search(/<[\s\S]+>/i) != -1){
 			this.links.push(msg.slice(msg.search("<") + 1, msg.search(">")))
@@ -164,10 +165,24 @@ class bot {
 	 * */
 	getCountryNames(){
 		var ret = []
-		for(var i in this.dict.countries){
-			ret.push(this.dict.countries[i].name)
+		for(var i in dict.countries){
+			ret.push(dict.countries[i].name)
 		}
 		return ret
+	}
+
+	/*
+	 *	Function to return the Object with alll information about the country, specified wuth the given name.
+	 *	If not available, if returns null
+	 * */
+	getCountry(name){
+		console.log(name)
+		for (var i in dict.countries){
+			if(dict.countries[i].name == name){
+				return dict.countries[i]
+			}
+		}
+		return null
 	}
 
 	/*
@@ -176,32 +191,47 @@ class bot {
 	 * */
 	hasKeyword(sentence){
 
-		// countries = getCountryNames()
-		// console.log(this.getCountryInSeason("herbst"))
-		// for(var i in countries){
-		// 	if(nachricht.includes(countries[i])){
-		// 		for(var j in this.dict.countries){
-		// 			if(countries[j] == countries[i]){
-		// 				si = this.getRandomElement(Object.entries(this.dict.sights[j]))
-		// 				// console.log(si)
-		// 			}
-		// 		}
-		// 		msg = si[1][0]['definition'][0]
-		// 		// console.log(si[1][0]['definition'][0])
-		// 	}
-		// }
+		let countries = this.getCountryNames()
+		for(var i in countries){
+			if(sentence.includes(countries[i])){
+				for(var j in dict.countries){
+					if(countries[j] == countries[i]){
+						this.desiredCountry.length = 0
+						this.desiredCountry.push(countries[j])
+					}
+				}
+			}
+		}
 
-
-		for (var i in this.dict.answers){
-			// console.log(dict.answers[i].keyword)
-			for(var j in this.dict.answers[i].keyword){
-				if(sentence.includes(this.dict.answers[i].keyword[j])){
-					if(!this.usedKeyWords.includes(this.dict.answers[i].keyword[j])){
-						this.usedKeyWords.push(this.dict.answers[i].keyword[j])
-						return this.getRandomElement(this.dict.answers[i].answer)
-					}else{
-						this.usedKeyWords.splice(this.usedKeyWords.indexOf(this.dict.answers[i].keyword[j]), 1)
-						return this.getRandomElement(this.dict.answers[i].multiple)
+		if(this.desiredCountry.length > 0){
+			for (var countryidx in this.desiredCountry) {
+				var countryObj = this.getCountry(this.desiredCountry[countryidx])
+				console.log(countryObj)
+				for (var i in countryObj.possibilities){
+					for (var j in countryObj.possibilities[i].keyword){
+						if(sentence.includes(countryObj.possibilities[i].keyword[j])){
+							if(!this.usedKeyWords.includes(countryObj.possibilities[i].keyword[j])){
+								this.usedKeyWords.push(countryObj.possibilities[i].keyword[j])
+								return this.getRandomElement(countryObj.possibilities[i].answer)
+							}else{
+								this.usedKeyWords.splice(this.usedKeyWords.indexOf(countryObj.possibilities[i].keywords[j]), 1)
+								return this.getRandomElement(countryObj.possibilities[i].multiple)
+							}
+						}
+					}
+				}
+			}
+		}else{
+			for (var i in dict.answers){
+				for(var j in dict.answers[i].keyword){
+					if(sentence.includes(dict.answers[i].keyword[j])){
+						if(!this.usedKeyWords.includes(dict.answers[i].keyword[j])){
+							this.usedKeyWords.push(dict.answers[i].keyword[j])
+							return this.getRandomElement(dict.answers[i].answer)
+						}else{
+							this.usedKeyWords.splice(this.usedKeyWords.indexOf(dict.answers[i].keyword[j]), 1)
+							return this.getRandomElement(dict.answers[i].multiple)
+						}
 					}
 				}
 			}
