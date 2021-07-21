@@ -1,8 +1,12 @@
 {
-	"answers": 
-	[
+	"greetings": [
+		"Guten Tag. Ich bin ein Reiseführer durch ganz EU. Ich hoffe ich kann Ihnen weiterhelfen. Was kann ich für Sie tun?",
+		"",
+		""
+	],
+	"answers": [
 		{
-			"keyword": ["hallo", "servus", "guten tag"], 
+			"keyword": ["hallo", "servus", "guten tag", "guten morgen", "guten abend"], 
 			"answer" : [
 				"Hallo, wie kann ich Ihnen weiterhelfen?",
 				"Servus, du willst also eine Reise buchen? Dann bist du hier richtig. Wo soll es denn hingehen?",
@@ -15,7 +19,20 @@
 			]
 		},
 		{
-			"keyword": ["buchen"], 
+			"keyword": ["tschüss", "aufwiedersehen", "bis dann", "danke"], 
+			"answer" :  [
+				"Tschüss und ich wünsche noch eine gute Reise.",
+				"Ich wünsche Ihnen noch eine gute Reise und viel Erfolg.",
+				"Servus und noch alles Beste"
+			],
+			"multiple": [
+				"Tschüss und ich wünsche noch eine gute Reise.",
+				"Ich wünsche Ihnen noch eine gute Reise und viel Erfolg.",
+				"Servus und noch alles Beste"
+			]
+		},
+		{
+			"keyword": ["buchen", "buchung", "gebucht"], 
 			"answer" : [
 				"In welches Land wollen Sie reisen?",
 				"Sehr angenehm zu hören. In welches Gebiet verschalgt es uns denn dieses Mal? Vielleicht RCOUNTRY.",
@@ -29,39 +46,52 @@
 			]
 		},
 		{
-			"keyword": ["planen", "planung"], 
-			"answer" : ["Je nachdem wonach Sie suchen, können viele Länder eine gute Kultivierung bieten."],
+			"keyword": ["planen", "planung", "geplant"], 
+			"answer" : [
+				"Je nachdem wonach Sie suchen, können viele Länder eine gute Kultivierung bieten.",
+				"Was halten Sie von RCOUNTRY?",
+				"Haben Sie gewisse Vorstellungen? RCHARACTER, RCHARACTER oder vielleicht doch in einer bestimmten Jahreszeit?"
+			],
 			"multiple": [
-				"",
-				"",
-				""
+				"Wollen Sie schon die nächste Reise planen?",
+				"Schon wieder eine neue Reise? Na gut, wohin denn dieses Mal?",
+				"Na, ein Urlaub zu wenig? Aber gut, ich helfe nur bei der Planung. Wohin soll es gehen?"
 			]
 		},
 		{
 			"keyword": ["empfehlen", "suchen", "erkundigen"], 
-			"answer" : ["Je nachdem wonach Sie suchen, können viele Länder eine gute Kultivierung bieten."],
+			"answer" : [
+				"Je nachdem wonach Sie suchen, können viele Länder eine gute Kultivierung bieten.",
+				"Nach was für einer Empfehlung suchen Sie denn? Sind Sie interessiert an Sehenswürdigkeiten oder vielleicht doch Wanderungen?",
+				"Kann ich Sie mit einer guten kulinarischen Vielfalt überzeugen?"
+			],
 			"multiple": [
-				"",
-				"",
-				""
+				"Sind Sie doch an Sehenswürdigkeiten interessiert?",
+				"Was wollen Sie denn noch mehr wissen?",
+				"Haben Sie denn interesse an einem bestimmten Land? Beispielsweise RCOUNTRY"
 			]
 		},
 		{
-			"keyword": ["sehenswürdigkeiten"], 
-			"answer" :    ["Von welchem Land möchten Sie die Sehenswürdigkeiten wissen?"],
+			"keyword": ["sehenswürdigkeiten", "zu sehen", "besichtigen", "anschauliches", "kultur"], 
+			"answer" : [
+				"Von welchem Land möchten Sie die Sehenswürdigkeiten wissen?",
+				"Hatten Sie sich schon ein Land ausgesucht? Ich kann RCOUNTRY nur empfehlen!!"
+			],
 			"multiple": [
-				"",
-				"",
-				""
+				"Sie sind ja sehr interessiert!! Aber nun ja, hier sind noch weitere Sehenswürdigkeiten: RSIGHT",
+				"War Ihnen meine Antwort nicht gut genug?",
+				"Sie haben schon eine Liste bekommen, wollen Sie auch noch etwas neues erfahren??"
 			]
 		},
 		{
 			"keyword": ["wanderung", "wanderungen", "fußweg", "spazieren", "wege"],
-			"answer" :    ["Sie müssten mir einen Standort nennen, für genauere angaben."],
+			"answer" : [
+				"Sie müssten mir einen Standort nennen, für genauere angaben.", 
+				"Ohne einen Zielort wird das eine endlose Liste, mein Freund. Wohin soll es denn nun gehen?"
+			],
 			"multiple": [
-				"",
-				"",
-				""
+				"Sie sind aber sehr fit unterwegs. Brauchen Sie denn noch mehr Empfehlungen?",
+				"Sie wollen noch mehr wandern? Wie schaut es denn mit Sehenswürdigkeiten aus?"
 			]
 		}
 	],

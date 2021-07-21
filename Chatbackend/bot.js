@@ -131,15 +131,15 @@ class bot {
 	 * */
 	postProcessMsg(msg){
 		if(!msg){
-		return '{"type": "msg", "name": "' + 
-			this.name + 
-			'", "msg": "' + 
-			this.getRandomElement(this.dict.noResponse) + 
-			'", "images":"' + 
-			this.images + 
-			'", "links":"' + 
-			this.links +
-			'"}'
+			return '{"type": "msg", "name": "' + 
+				this.name + 
+				'", "msg": "' + 
+				this.getRandomElement(this.dict.noResponse) + 
+				'", "images":"' + 
+				this.images + 
+				'", "links":"' + 
+				this.links +
+				'"}'
 		}
 		msg = msg.replace("RSEASON", this.getRandomElement(this.dict.seasons))
 		msg = msg.replace("RCHARACTER", this.getRandomElement(this.dict.characters))
@@ -200,6 +200,7 @@ class bot {
 						this.usedKeyWords.push(this.dict.answers[i].keyword[j])
 						return this.getRandomElement(this.dict.answers[i].answer)
 					}else{
+						this.usedKeyWords.splice(this.usedKeyWords.indexOf(this.dict.answers[i].keyword[j]), 1)
 						return this.getRandomElement(this.dict.answers[i].multiple)
 					}
 				}
@@ -217,7 +218,6 @@ class bot {
 		let msg = ''
 		this.links.length = 0
 		this.images.length = 0
-
 		msg = this.hasKeyword(nachricht)
 		msg = this.postProcessMsg(msg)
 		// console.log('Send: ' + msg)
