@@ -142,6 +142,11 @@ class bot {
 				this.links +
 				'"}'
 		}
+		if (msg.search("RCSIGHT") != -1){
+			// Definition, Preis, Oeffnung, Name?
+		}
+		msg = msg.replace("RCSEASON", this.getRandomElement(this.getCountry(this.desiredCountry[0]).season))
+		msg = msg.replace("RCCHARACTER", this.getRandomElement(this.getCountry(this.desiredCountry[0]).character))
 		msg = msg.replace("RSEASON", this.getRandomElement(dict.seasons))
 		msg = msg.replace("RCHARACTER", this.getRandomElement(dict.characters))
 		msg = msg.replace("RCOUNTRY", this.getRandomElement(this.getCountryNames()))
@@ -194,15 +199,15 @@ class bot {
 		let countries = this.getCountryNames()
 		for(var i in countries){
 			if(sentence.includes(countries[i])){
-				for(var j in dict.countries){
-					if(countries[j] == countries[i]){
-						this.desiredCountry.length = 0
-						this.desiredCountry.push(countries[j])
-					}
+				if(!this.desiredCountry.includes(countries[i])){
+					this.usedKeyWords.length = 0
+					this.desiredCountry.length = 0
+					this.desiredCountry.push(countries[i])
 				}
 			}
 		}
 
+		console.log(this.desiredCountry)
 		if(this.desiredCountry.length > 0){
 			for (var countryidx in this.desiredCountry) {
 				var countryObj = this.getCountry(this.desiredCountry[countryidx])
@@ -214,7 +219,7 @@ class bot {
 								this.usedKeyWords.push(countryObj.possibilities[i].keyword[j])
 								return this.getRandomElement(countryObj.possibilities[i].answer)
 							}else{
-								this.usedKeyWords.splice(this.usedKeyWords.indexOf(countryObj.possibilities[i].keywords[j]), 1)
+								this.usedKeyWords.splice(this.usedKeyWords.indexOf(countryObj.possibilities[i].keyword[j]), 1)
 								return this.getRandomElement(countryObj.possibilities[i].multiple)
 							}
 						}
@@ -250,7 +255,6 @@ class bot {
 		this.images.length = 0
 		msg = this.hasKeyword(nachricht)
 		msg = this.postProcessMsg(msg)
-		// console.log('Send: ' + msg)
 		this.client.con.sendUTF(msg)
 	}
 

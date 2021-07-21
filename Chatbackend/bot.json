@@ -117,7 +117,7 @@
 		{
 			"name": "italien",
 			"season": ["herbst", "winter"],
-			"character": ["berge", "meer", "strand", "historisch"],
+			"character": ["berge", "meer", "strand", "historisches"],
 			"sights": {
 				"Kolosseum":[
 					{"definition": ["Es ist das Wahrzeichen von Rom, wenn nicht sogar von ganz Italien: das Kolosseum. Das imposante und weltberühmte architektonische Meisterwerk beeindruckt mit einem Umfang von 527 Metern und einer Höhe von 48 Metern. Heute ist das Kolosseum ein Schmuckstück, damals war es blutiger Schauplatz bestialischer Gladiatorenkämpfe zu Freuden des damaligen Kaiserhauses."]},
@@ -138,18 +138,21 @@
 			"possibilities":
 			[
 				{
-					"keyword": ["buchen", "buchung", "gebucht"], 
+					"keyword": ["buchen", "buchung"], 
 					"answer" : [
+						"Italien ist ein wunderbares Ziel im RCSEASON. Ich kann Ihnen beim buchen direkt nicht helfen, aber Sie können sich hier informieren: <https://urlaub.check24.de/reisen/italien?wpset=google_reisen_dsa&tid=CH24_R_GO_DSA>"
 					],
 					"multiple": [
+						"Der Link hat Sie wohl zu nichts gebracht... Hier vielleicht ein besserer: <https://www.ab-in-den-urlaub.de/urlaub/europa/italien/324>"
 					]
 				},
 				{
 					"keyword": ["planen", "planung", "geplant"], 
 					"answer" : [
-						"Eine Reise nach Italien ist fabelhaft."
+						"Eine Reise nach Italien ist fabelhaft, wenn Sie sich für RCCHARACTER interessieren."
 					],
 					"multiple": [
+						"Sie sind also noch nicht überzeugt??? Na dann, was sagen Sie zu RCSIGHT"
 					]
 				},
 				{
@@ -179,8 +182,7 @@
 			"name": "frankreich",
 			"season":["herbst", "winter"],
 			"character":["berge", "meer", "strand", "historisch"],
-			"sights":
-			{
+			"sights": {
 				"Schloss Versailles":[
 					{"definition":["Es ist eine der größten Palastanlagen Europas und war von Mitte des 17. Jahrhunderts bis zum Ausbruch der Französischen Revolution die Residenz der französischen Könige."]},
 					{"preis":["Der Eintritt kostet 20 Euro"]},
@@ -192,8 +194,7 @@
 					{"öffnung":["vom 15. Juni bis 1. September täglich von 9 bis 0.45 Uhr, im Rest des Jahres täglich von 9.30 bis 23.45 Uhr"]}
 				]
 			},
-			"possibilities":
-			[
+			"possibilities": [
 				{
 					"keyword": ["buchen", "buchung", "gebucht"], 
 					"answer" : [
@@ -204,8 +205,10 @@
 				{
 					"keyword": ["planen", "planung", "geplant"], 
 					"answer" : [
+						"Juhu Frankreich, baguette!!"
 					],
 					"multiple": [
+						"Baguette??"
 					]
 				},
 				{
@@ -235,8 +238,7 @@
 			"name":"spanien",
 			"season":["frühling", "winter"],
 			"character":["berge", "meer", "strand", "historisch"],
-			"sights":
-			{
+			"sights":{
 				"Sagrada Familia":[
 					{"definition":["Die Sagrada Familia ist das Wahrzeichen der weltgewandten Stadt Barcelona und wird täglich von Millionen von internationalen Besuchern bestaunt."]},
 					{"preis":["Kirche: 15€ (nur online erwerblich) Kirche & Audioguide: 22€ Kirche, Museum & Audioguide: 24€ Kirche & Führung: 24€ Kirche, Turmbesuch & Audioguide: 29€"]},
@@ -248,8 +250,7 @@
 					{"öffnung":["1. Apr.-14. Okt.: Mo-So 8.30-20 Uhr, Di-Sa 22-23.30 Uhr (Abendbesichtigung) 15. Okt.-31. Mrz.: Mo-So 8.30-18 Uhr, Fr & Sa 20-21.30 Uhr 25. Dez. & 1. Jan.: geschlossen"]}
 				]
 			},
-			"possibilities":
-			[
+			"possibilities":[
 				{
 					"keyword": ["buchen", "buchung", "gebucht"], 
 					"answer" : [
@@ -291,8 +292,7 @@
 			"name":"portugal",
 			"season":["sommer", "winter"],
 			"character":["berge", "meer", "strand", "historisch"],
-			"sights":
-			{
+			"sights": {
 				"Landschaft um Sintra":[
 					{"definition":["Die Landschaft hier ist wie aus der Seite eines Märchenbuches der Gebrüder Grimm herausgerissen: Ein dicht bewachsener Zauberwald neben einem exotischen Schlossgarten und dazu ein majestätischer und knallbunter Palast. Das alles und noch viel mehr, solltest du bei einem Tagestrip in dieser Region auf jeden Fall erkunden."]},
 					{"preis":["Kostenlos"]},
@@ -304,8 +304,7 @@
 					{"öffnung":["Jederzeit"]}
 				]
 			},
-			"possibilities":
-			[
+			"possibilities": [
 				{
 					"keyword": ["buchen", "buchung", "gebucht"], 
 					"answer" : [
@@ -347,8 +346,7 @@
 			"name":"österreich",
 			"season":["herbst", "winter"],
 			"character":["berge", "meer", "strand", "historisch"],
-			"sights":
-			{
+			"sights": {
 				"Schloss Schönbrunn":[
 					{"definition":["Die wunderschöne spätbarocke Schlossanlage in Österreichs Hauptstadt gehört zu den beliebtesten Sehenswürdigkeiten in Wien und führt deshalb auch zu Recht unsere Liste an. Tauchen Sie bei einer Besichtigung der kulturhistorisch bedeutenden Anlage in die Geschichte seiner prominenten Bewohner ein."]},
 					{"preis":["Kostenlos"]},
@@ -360,8 +358,7 @@
 					{"öffnung":["9:00 - 20:00"]}
 				]
 			},
-			"possibilities":
-			[
+			"possibilities": [
 				{
 					"keyword": ["buchen", "buchung", "gebucht"], 
 					"answer" : [
@@ -403,8 +400,7 @@
 			"name": "tschechien",
 			"season":["frühling", "sommer"],
 			"character":["berge", "meer", "strand", "historisch"],
-			"sights":
-			{
+			"sights": {
 				"Prager Zoo":[
 					{"definition":["Der Prager Zoo befindet sich auf einem Hügel im Stadtteil Troja am Moldau-Ufer. Hier leben circa 5.000 Tiere von rund 700 verschiedenen Tierarten. Als Highlights gelten die Komodowarane, asiatische Elefanten und die seltenen Przewalskipferde, die in den Steppen Zentralasiens heimisch sind. Entdecken Sie weitere Höhepunkte bei einer Fahrt mit der Miniaturseilbahn."]},
 					{"preis":["ab 34,88€ pro Erwachsenem (Der Preis variiert je nach Gruppengröße.)"]},
@@ -416,8 +412,7 @@
 					{"öffnung":["Immer"]}
 				]
 			},
-			"possibilities":
-			[
+			"possibilities": [
 				{
 					"keyword": ["buchen", "buchung", "gebucht"], 
 					"answer" : [
@@ -459,8 +454,7 @@
 			"name":"niederlande",
 			"season":["frühling", "winter"],
 			"character":["berge", "meer", "strand", "historisch"],
-			"sights":
-			{
+			"sights": {
 				"Amsterdam":[
 					{"definition":["Amsterdam ist nicht nur die Hauptstadt der Niederlande, sondern auch eine der schönsten Städte in Holland mit einer Vielzahl an Sehenswürdigkeiten. Sie ist mit über 800.000 Einwohnern das Aushängeschild und die bevölkerungsreichste Metropole des Königreichs der Niederlande."]},
 					{"preis":["Kostenlos"]},
@@ -472,8 +466,7 @@
 					{"öffnung":["09:00 – 19:00"]}
 				]
 			},
-			"possibilities":
-			[
+			"possibilities": [
 				{
 					"keyword": ["buchen", "buchung", "gebucht"], 
 					"answer" : [
@@ -515,8 +508,7 @@
 			"name":"belgien",
 			"season":["herbst", "winter"],
 			"character":["berge", "meer", "strand", "historisch"],
-			"sights":
-			{
+			"sights": {
 				"Manneken-Pis":[
 					{"definition":["Es ist DAS Wahrzeichen Belgiens und eine der Anlaufstellen für Touristen aus aller Welt: Der Manneken Pis in Brüssel – der pinkelnde kleine Mann. Die 61 cm hohe Statue besteht aus Bronze und ziert den Brunnen an der Ecke Rue de l’Etuve und Rue des Grands Carmes. Ein Besuch hier lässt Sie schmunzeln, aber passen Sie auf, dass Sie nicht nass werden!"]},
 					{"preis":[""]},
@@ -528,8 +520,7 @@
 					{"öffnung":[""]}
 				]
 			},
-			"possibilities":
-			[
+			"possibilities": [
 				{
 					"keyword": ["buchen", "buchung", "gebucht"], 
 					"answer" : [
@@ -571,8 +562,7 @@
 			"name":"estland",
 			"season":["sommer", "winter"],
 			"character":["berge", "meer", "strand", "historisch"],
-			"sights":
-			{
+			"sights":{
 				"Tallinn":[
 					{"definition":["Direkt an der Ostsee liegt das kulturelle Zentrum des Landes. Die Geschichte der Stadt begann am Domberg. Hier ließen sich die ersten Siedler nieder, weil sie von dort aus die Küste gut im Blick hatten. Heute blickst du von dort aus auf die Dächer Tallinns. Außerdem erwartet dich am Domberg die beeindruckende Alexander-Newski-Kathedrale."]},
 					{"preis":[""]},
@@ -584,8 +574,7 @@
 					{"öffnung":[""]}
 				]
 			},
-			"possibilities":
-			[
+			"possibilities":[
 				{
 					"keyword": ["buchen", "buchung", "gebucht"], 
 					"answer" : [
@@ -627,8 +616,7 @@
 			"name":"finnland",
 			"season":["herbst", "winter"],
 			"character":["berge", "meer", "strand", "historisch"],
-			"sights":
-			{
+			"sights": {
 				"Helsinki":[
 					{"definition":["Die lebendige Hafenstadt bezaubert Besucher mit wunderschönen Inseln, grünen Parks und gemütlichen Straßencafés. Abwechslungsreiche Architektur und eindrucksvolle Kathedralen prägen das Stadtbild. In der Hauptstadt Finnlands gibt es einiges zu entdecken: Vom Kauppatori-Markt mit seinen leckeren Lachsbrötchen über die beeindruckende Uspenski-Kathedrale bis hin zu einer Fahrt mit dem SkyWheel, einem verglasten Riesenrad. Hier ist für jeden etwas dabei!"]},
 					{"preis":[""]},
@@ -640,8 +628,7 @@
 					{"öffnung":[""]}
 				]
 			},
-			"possibilities":
-			[
+			"possibilities": [
 				{
 					"keyword": ["buchen", "buchung", "gebucht"], 
 					"answer" : [
@@ -683,8 +670,7 @@
 			"name":"griechenland",
 			"season":["frühling", "winter"],
 			"character":["berge", "meer", "strand", "historisch"],
-			"sights":
-			{
+			"sights": {
 				"Athener Akropolis":[
 					{"definition":["Hoch über der Stadt Athen ragt die wohl bekannteste Sehenswürdigkeit Griechenlands: die Akropolis. Die Ruinen der ehemaligen Stadtfestung sind das Wahrzeichen der Stadt und ein Schmuckstück antiker Architektur, die ihr im Griechenland Urlaub unbedingt besuchen solltet."]},
 					{"preis":["20€, ermäßigt 10€"]},
@@ -696,8 +682,7 @@
 					{"öffnung":["unterschiedlich, in der Regel sind alle Klöster täglich ab 9 Uhr geöffnet"]}
 				]
 			},
-			"possibilities":
-			[
+			"possibilities":[
 				{
 					"keyword": ["buchen", "buchung", "gebucht"], 
 					"answer" : [
@@ -739,8 +724,7 @@
 			"name":"irland",
 			"season":["frühling", "sommer"],
 			"character":["berge", "meer", "strand", "historisch"],
-			"sights":
-			{
+			"sights": {
 				"Trinity College in Dublin":[
 					{"definition":["Eine der bekanntesten Sehenswürdigkeiten von Irland ist das Trinity College in der Hauptstadt Dublin. Besonders die Alte Bibliothek der 1592 gegründeten Universität ist es, welche die Touristen anlockt. Hier lagern rund 4,5 Millionen Bände sowie eine große Sammlung historischer Handschriften, Manuskripte, Inkunabeln und frühe Drucke der Bibel."]},
 					{"preis":["Erwachsene zahlen 10 Euro, Kinder unter 12 Jahren haben freien Eintritt"]},
@@ -752,8 +736,7 @@
 					{"öffnung":["Von November bis Februar täglich von 9 bis 17 Uhr. Von März bis April und von September bis Oktober täglich von 8 bis 19 Uhr. In den Monaten Mai bis August täglich von 8 bis 21 Uhr"]}
 				]
 			},
-			"possibilities":
-			[
+			"possibilities": [
 				{
 					"keyword": ["buchen", "buchung", "gebucht"], 
 					"answer" : [
@@ -795,8 +778,7 @@
 			"name":"kroatien",
 			"season":["sommer", "herbst"],
 			"character":["berge", "meer", "strand", "historisch"],
-			"sights":
-			{
+			"sights": {
 				"Nationalpark Plitvicer Seen":[
 					{"definition":["Er ist der größte und älteste Nationalpark in Kroatien und wohl einer der Schönsten in ganz Europa. Der Nationalpark Plitvicer Seen liegt im Nordosten von Kroatien und ist für die meisten Kroatienurlauber ein absolutes Muss."]},
 					{"preis":[""]},
@@ -808,8 +790,7 @@
 					{"öffnung":[""]}
 				]
 			},
-			"possibilities":
-			[
+			"possibilities": [
 				{
 					"keyword": ["buchen", "buchung", "gebucht"], 
 					"answer" : [
@@ -851,8 +832,7 @@
 			"name":"lettland",
 			"season":["herbst", "winter"],
 			"character":["berge", "meer", "strand", "historisch"],
-			"sights":
-			{
+			"sights": {
 				"Riga":[
 					{"definition":["Die größte und aufregendste Metropole im Baltikum - Riga wird Sie begeistern. Die gotische Kathedrale und der unglaublich luxuriöse Jugendstil, die gemütlichen Cafés und Restaurants mit Weltklasse-Küche sind nur ein kleiner Teil, der Riga zu einem großartigen Urlaubsziel macht."]},
 					{"preis":[""]},
@@ -864,8 +844,7 @@
 					{"öffnung":[""]}
 				]
 			},
-			"possibilities":
-			[
+			"possibilities": [
 				{
 					"keyword": ["buchen", "buchung", "gebucht"], 
 					"answer" : [
@@ -907,8 +886,7 @@
 			"name":"litauen",
 			"season":["herbst", "winter"],
 			"character":["berge", "meer", "strand", "historisch"],
-			"sights":
-			{
+			"sights": {
 				"Nationalpark Dzukija":[
 					{"definition":["Der Dzukija-Nationalpark liegt Süd-Litauen, an der Grenze zu Weißrussland. Er ist der flächenmäßig größte Nationalpark Litauens und wurde 1991 gegründet. Etwa 90 Prozent der Fläche des Reservats sind bewaldet. Flüsse, Seen, Bäche und Moore sind prägend. Das Sumpfgebiet Cepkeliai ist das größte zusammenhängende Moor in Litauen. Kraniche, Adler, Wölfe, Elche und Schlangen kommen hier vor. Auf Holzplankenwegen kann man, begleitet von einem Führer, das Schutzgebiet erkunden und dabei die unvergleichliche Stille der Moorlandschaft auf sich wirken lassen. Die Gegend ist aber auch kulturhistorisch interessant. Schon vor 10.000 Jahren siedelten hier Menschen. Am Zusammenfluss von Nemunas und Merkis, in Merkyne, gibt es ein Heimatmuseum. Dortbefindet sich außerdem das Museum der Freiheitskämpfe, untergebracht in einer alten KGB-Zentrale. Das Informationszentrum des Nationalparks Dzukija befindet sich in Marcinkonys. Hier kann man auch Kanufahrten und Führungen buchen."]},
 					{"preis":[""]},
@@ -920,8 +898,7 @@
 					{"öffnung":[""]}
 				]
 			},
-			"possibilities":
-			[
+			"possibilities": [
 				{
 					"keyword": ["buchen", "buchung", "gebucht"], 
 					"answer" : [
@@ -963,8 +940,7 @@
 			"name":"luxemburg",
 			"season":["sommer", "winter"],
 			"character":["berge", "meer", "strand", "historisch"],
-			"sights":
-			{
+			"sights": {
 				"Bockkasematten":[
 					{"definition":["Die Wahl der schönsten Sehenswürdigkeit Luxemburgs ist leicht: der Faszination der Bockkasematten kann man nur wenig entgegensetzen. Die Ringmauern mit den in Felsen geschlagenen Höhlen gehörten einst zur Festungsanlage von Luxemburg. Sie gehen auf das 17. Jahrhundert zurück und umfassten damals ein noch deutlich größeres Höhlensystem. Heute sind immerhin noch 17 km Kasematten erhalten, die sich über mehrere Stockwerke erstrecken."]},
 					{"preis":[""]},
@@ -976,8 +952,7 @@
 					{"öffnung":[""]}
 				]
 			},
-			"possibilities":
-			[
+			"possibilities": [
 				{
 					"keyword": ["buchen", "buchung", "gebucht"], 
 					"answer" : [
@@ -1019,8 +994,7 @@
 			"name":"malta",
 			"season":["frühling", "herbst"],
 			"character":["berge", "meer", "strand", "historisch"],
-			"sights":
-			{
+			"sights": {
 				"Marsaxlokk":[
 					{"definition":["Marsaxlokk ist ein malerisches Fischerdorf. Im Hafen liegen viele bunt bemalte Boote. Das perfekte Fotomotiv. Schlendere entlang der Promenade und lass dich einfach treiben. Wir empfanden den Ort als sehr angenehm und entspannend. Viele Restaurants bieten frische und leckere Fischgerichte – wie es eben in einem Fischerort sein soll. Wir haben uns in Ron’s Restaurant locken lassen und haben es nicht bereut. Lecker!"]},
 					{"preis":[""]},
@@ -1032,8 +1006,7 @@
 					{"öffnung":[""]}
 				]
 			},
-			"possibilities":
-			[
+			"possibilities": [
 				{
 					"keyword": ["buchen", "buchung", "gebucht"], 
 					"answer" : [
@@ -1075,8 +1048,7 @@
 			"name":"polen",
 			"season":["herbst", "winter"],
 			"character":["berge", "meer", "strand", "historisch"],
-			"sights":
-			{
+			"sights": {
 				"Warschau":[
 					{"definition":["Die Altstadt Warschaus vereint verschiedene Architekturstile miteinander, weshalb sie 1980 zum UNESCO-Weltkulturerbe ernannt wurde. Neben der mittelalterlichen Johanneskathedrale finden Sie dort auch das Königsschloss, welches bis in das 18. Jahrhundert hinein Sitz der polnischen Könige war."]},
 					{"preis":[""]},
@@ -1088,8 +1060,7 @@
 					{"öffnung":[""]}
 				]
 			},
-			"possibilities":
-			[
+			"possibilities":[
 				{
 					"keyword": ["buchen", "buchung", "gebucht"], 
 					"answer" : [
@@ -1131,8 +1102,7 @@
 			"name":"rumänien",
 			"season":["frühling", "winter"],
 			"character":["berge", "meer", "strand", "historisch"],
-			"sights":
-			{
+			"sights": {
 				"Moldauklöster in der Bukowina":[
 					{"definition":["Die Moldauklöster bestechen durch ihre einzigartigen farbenfrohen Fresken, die sowohl die Innen- und Außenwände als auch die Schutzmauern über und über bedecken. Viele der farbenprächtigen Gotteshäuser zählen seit 1993 bzw. 2010 zum Weltkulturerbe der UNESCO."]},
 					{"preis":[""]},
@@ -1144,8 +1114,7 @@
 					{"öffnung":[""]}
 				]
 			},
-			"possibilities":
-			[
+			"possibilities": [
 				{
 					"keyword": ["buchen", "buchung", "gebucht"], 
 					"answer" : [
@@ -1187,8 +1156,7 @@
 			"name":"slowakei",
 			"season":["frühling", "sommer"],
 			"character":["berge", "meer", "strand", "historisch"],
-			"sights":
-			{
+			"sights": {
 				"Bratislava":[
 					{"definition":["ich erwarten hier historische Gebäude, wunderschöne Kirchen und Burgen, eine charmante Altstadt (gleichzeitig auch sehr touristisch), coole Cafés und Restaurants sowie eine Menge Ausflugsziele rund um Bratislava. Wir empfehlen dir mindestens 2 Tage für die Stadt, um ganz in Ruhe ein paar Sehenswürdigkeiten zu erkunden. Unbedingt solltest du die Aussicht über die Stadt vom Observation Deck (auch UFO genannt) bestaunen. Halte außerdem Ausschau nach den bekannten Bronzefiguren, welche in der Stadt verteilt sind."]},
 					{"preis":[""]},
@@ -1200,8 +1168,7 @@
 					{"öffnung":[""]}
 				]
 			},
-			"possibilities":
-			[
+			"possibilities": [
 				{
 					"keyword": ["buchen", "buchung", "gebucht"], 
 					"answer" : [
@@ -1243,8 +1210,7 @@
 			"name":"slowenien",
 			"season":["herbst", "winter"],
 			"character":["berge", "meer", "strand", "historisch"],
-			"sights":
-			{
+			"sights": {
 				"Bled":[
 					{"definition":["Bled und der Bleder See mit der einzigen natürlichen Insel Sloweniens ziehen schon seit Jahren Liebhaber des Schönen an. Zur Insel mit der Kirche, deren Glocke eine besondere Hommage an die Liebe ist, fahren traditionelle Boote, die Pletna genannt werden. Den schönsten Blick auf den See mit der Insel und die umliegenden Alpengipfel bietet die auf einem Felsen über dem See thronende Burg. Die Schönheit von Bled bemerkten auch die beiden Medienriesen Lonely Planet und der Daily Mail, die es auf die Top 10 Reiseziele der Welt platzierten!"]},
 					{"preis":[""]},
@@ -1256,8 +1222,7 @@
 					{"öffnung":[""]}
 				]
 			},
-			"possibilities":
-			[
+			"possibilities":[
 				{
 					"keyword": ["buchen", "buchung", "gebucht"], 
 					"answer" : [
@@ -1299,8 +1264,7 @@
 			"name":"ungarn",
 			"season":["frühling", "winter"],
 			"character":["berge", "meer", "strand", "historisch"],
-			"sights":
-			{
+			"sights": {
 				"Parlamentsgebäude":[
 					{"definition":["Zu den bekanntesten Sehenswürdigkeiten der ungarischen Hauptstadt gehört mit Sicherheit das prachtvolle Parlamentsgebäude in Budapest. Der riesige Bau mit seinen dunkelroten Kuppeln und einer faszinierenden Fassade befindet sich an den Flussufern der Donau auf der Pest-Seite. Den besten Blick auf das Parlamentsgebäude hat man am Tag und vor allem auch in der Nacht, wenn das Gebäude beleuchtet wird, von der gegenüberliegenden Buda-Seite, wenn man die Donau überquert hat."]},
 					{"preis":[""]},
@@ -1312,8 +1276,7 @@
 					{"öffnung":[""]}
 				]
 			},
-			"possibilities":
-			[
+			"possibilities": [
 				{
 					"keyword": ["buchen", "buchung", "gebucht"], 
 					"answer" : [
@@ -1355,8 +1318,7 @@
 			"name":"deutschland",
 			"season":["sommer", "herbst"],
 			"character":["berge", "meer", "strand", "historisch"],
-			"sights":
-			{
+			"sights": {
 				"Schloss Neuschwanstein":[
 					{"definition":["Schloss Neuschwanstein ist international eine der bekanntesten Sehenswürdigkeit von Deutschland und eine der beliebtesten Sehenswürdigkeiten in Bayern. Jährlich kommen über 1,5 Millionen Touristen aus aller Welt, um sich das Märchenschloss anzuschauen. Seine Lage in den Ausläufern der Alpen macht es zusätzlich zu einem beliebten Reiseziel in Deutschland."]},
 					{"preis":[""]},
@@ -1368,8 +1330,7 @@
 					{"öffnung":[""]}
 				]
 			},
-			"possibilities":
-			[
+			"possibilities": [
 				{
 					"keyword": ["buchen", "buchung", "gebucht"], 
 					"answer" : [
@@ -1411,8 +1372,7 @@
 			"name":"schweden",
 			"season":["herbst", "winter"],
 			"character":["berge", "meer", "strand", "historisch"],
-			"sights":
-			{
+			"sights": {
 				"Das Nordlicht":[
 					{"definition":["Das Polarlicht ist eine Sehenswürdigkeit, für die du Glück und Geduld brauchst. Kiruna und Abisko sind die Reiseziele, wo die Chance am größten ist. Tagsüber erkundest du den Nationalpark auf Schneeschuhen, nachts wartest du auf dein grünes Wunder."]},
 					{"preis":[""]},
@@ -1424,8 +1384,7 @@
 					{"öffnung":[""]}
 				]
 			},
-			"possibilities":
-			[
+			"possibilities": [
 				{
 					"keyword": ["buchen", "buchung", "gebucht"], 
 					"answer" : [
