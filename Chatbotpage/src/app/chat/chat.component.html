@@ -14,7 +14,6 @@
 	</div>
 	<div style="overflow: scroll; height: 40vh;" #scrollMe [scrollTop]="scrollMe.scrollHeight" class="card-body msg_card_body">
 		<div *ngFor="let msg of messages">
-			{{ msg | json }}
 			<div *ngIf="msg.name == activeUser; else received" class="d-flex justify-content-end mb-4">
 				<div class="msg_cotainer_send">
 					{{msg.msg}}

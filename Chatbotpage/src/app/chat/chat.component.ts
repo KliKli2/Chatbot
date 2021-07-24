@@ -80,17 +80,14 @@ export class ChatComponent implements OnInit {
 			scores.set("time", msg.substring(start4+1, end4));
 			if(end0 == -1 || end0 == msg.length){
 				this.sights = scores;
-				console.log(scores)
 				ret.push(scores)
 				break;
 			}else{
 				pos = end0;
 				this.sights = scores;
-				console.log(scores)
 				ret.push(scores)
 			}
 		}
-		console.log(ret)
 		return ret
 	}
 
