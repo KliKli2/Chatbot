@@ -95,12 +95,15 @@ class bot {
 	}
 
 	/*
-	 *	Function to return all countries that are attractive through certain characteristics
+	 *	Function to return all countries or if set a maximum amount, that are attractive through certain characteristics
 	 * */
-	getCountryWithCharacteristic(character){
+	getCountryWithCharacteristic(character, max){
 		var ret = []
-		for(var i in countries){
-			if(dict.countries[i].character.includes(character)){
+		if(max == -1){
+			max = 5
+		}
+		for(var i in dict.countries){
+			if(dict.countries[i].character.includes(character) && ret.length < max){
 				ret.push(dict.countries[i].name)
 			}
 		}
@@ -112,7 +115,7 @@ class bot {
 	 * */
 	getCountryInSeason(season){
 		var ret = []
-		for(var i in countries){
+		for(var i in dict.countries){
 			if(dict.countries[i].season.includes(season)){
 				ret.push(dict.countries[i].name)
 			}
@@ -124,7 +127,59 @@ class bot {
 	 * Function to return a random element from a specific array
 	 */
 	getRandomElement(responses){
+		if(responses == null || responses == undefined){
+			return []
+		}
 		return responses[Math.floor(Math.random()*responses.length)]
+	}
+
+	/*
+	 *	Function to get a working String made from the given object
+	 * */
+	processSights(sights, all){
+		let ret = "|"
+		if(!all){
+			let sight = this.getRandomElement(sights)
+			ret += "~" + sight.name + "~"
+			ret += "#" + sight.definition + "#"
+			ret += "$" + sight.preis + "$"
+			ret += "@" + sight.öffnung + "@"
+			ret += "|"
+			return ret
+		}else{
+			for(var i in sights){
+				ret += "~" + sights[i].name + "~"
+				ret += "#" + sights[i].definition + "#"
+				ret += "$" + sights[i].preis + "$"
+				ret += "@" + sights[i].öffnung + "@"
+				ret += "|"
+			}
+			return ret
+		}
+	}
+
+	/*
+	 *	Function to process multiple Countries and their information for the response
+	 * */
+	processChars(countries){
+		let ret = ""
+		for (var i in countries){
+			ret += "+" + countries[i]
+		}
+		ret += "+"
+		return ret
+	}
+
+	/*
+	 *	Function to return a processed string with a formatted list.
+	 * */
+	processList(list){
+		let ret = ""
+		for (var i in list){
+			ret += "+" + list[i]
+		}
+		ret += "+"
+		return ret
 	}
 
 	/*
@@ -132,24 +187,55 @@ class bot {
 	 * */
 	postProcessMsg(msg){
 		if(!msg){
-			return '{"type": "msg", "name": "' + 
-				this.name + 
-				'", "msg": "' + 
-				this.getRandomElement(dict.noResponse) + 
-				'", "images":"' + 
-				this.images + 
-				'", "links":"' + 
-				this.links +
-				'"}'
+			if(this.desiredCountry.length > 0){
+				return '{"type": "msg", "name": "' + 
+					this.name + 
+					'", "msg": "' + 
+					this.getRandomElement(this.getCountry(this.desiredCountry[0]).noResponse) + 
+					'", "images":"' + 
+					this.images + 
+					'", "links":"' + 
+					this.links +
+					'"}'
+			}else{
+				return '{"type": "msg", "name": "' + 
+					this.name + 
+					'", "msg": "' + 
+					this.getRandomElement(dict.noResponse) + 
+					'", "images":"' + 
+					this.images + 
+					'", "links":"' + 
+					this.links +
+					'"}'
+			}
+		}
+		if (msg.search("ALLCOUNTRIES") != -1){
+			msg = msg.replace("ALLCOUNTRIES", this.processList(this.getCountryNames()))
+		}
+		if (msg.search("R5CKULINARISCH") != -1){
+			msg = msg.replace("R5CKULINARISCH", this.processChars(this.getCountryWithCharacteristic("kulinarisch", 5)))
+		}
+		if (msg.search("ALLSIGHTS") != -1){
+			msg = msg.replace("ALLSIGHTS", this.processSights(this.getCountry(this.desiredCountry[0]).sights, true))
 		}
 		if (msg.search("RCSIGHT") != -1){
-			// Definition, Preis, Oeffnung, Name?
+			msg = msg.replace("RCSIGHT", this.processSights(this.getCountry(this.desiredCountry[0]).sights, false))
 		}
-		msg = msg.replace("RCSEASON", this.getRandomElement(this.getCountry(this.desiredCountry[0]).season))
-		msg = msg.replace("RCCHARACTER", this.getRandomElement(this.getCountry(this.desiredCountry[0]).character))
-		msg = msg.replace("RSEASON", this.getRandomElement(dict.seasons))
-		msg = msg.replace("RCHARACTER", this.getRandomElement(dict.characters))
-		msg = msg.replace("RCOUNTRY", this.getRandomElement(this.getCountryNames()))
+		if (msg.search("RCSEASON") != -1){
+			msg = msg.replace("RCSEASON", this.capitalize(this.getRandomElement(this.getCountry(this.desiredCountry[0]).season)))
+		}
+		if (msg.search("RCCHARACTER") != -1){
+			msg = msg.replace("RCCHARACTER", this.capitalize(this.getRandomElement(this.getCountry(this.desiredCountry[0]).character)))
+		}
+		if (msg.search("RSEASON") != -1){
+			msg = msg.replace("RSEASON", this.capitalize(this.getRandomElement(dict.seasons)))
+		}
+		if (msg.search("RCHARACTER") != -1){
+			msg = msg.replace("RCHARACTER", this.capitalize(this.getRandomElement(dict.characters)))
+		}
+		if (msg.search("RCOUNTRY") != -1){
+			msg = msg.replace("RCOUNTRY", this.capitalize(this.getRandomElement(this.getCountryNames())))
+		}
 		if(msg.search(/<[\s\S]+>/i) != -1){
 			this.links.push(msg.slice(msg.search("<") + 1, msg.search(">")))
 			msg = msg.replace(msg.slice(msg.search("<"), msg.search(">") + 1), "")
@@ -181,7 +267,6 @@ class bot {
 	 *	If not available, if returns null
 	 * */
 	getCountry(name){
-		console.log(name)
 		for (var i in dict.countries){
 			if(dict.countries[i].name == name){
 				return dict.countries[i]
@@ -191,14 +276,20 @@ class bot {
 	}
 
 	/*
+	 *	Function to make the first letter into uppercase
+	 * */
+	capitalize(string){
+		return string.charAt(0).toUpperCase() + string.slice(1);
+	}
+
+	/*
 	 *	Function to determine if the sentence has one of the words included, that should trigger the word spotting algorithm
 	 *	It also checks for multiple usage of that specific word and returns the corresponding message
 	 * */
 	hasKeyword(sentence){
-
 		let countries = this.getCountryNames()
 		for(var i in countries){
-			if(sentence.includes(countries[i])){
+			if(sentence.includes(countries[i]) || sentence.includes(this.capitalize(countries[i]))){
 				if(!this.desiredCountry.includes(countries[i])){
 					this.usedKeyWords.length = 0
 					this.desiredCountry.length = 0
@@ -207,14 +298,29 @@ class bot {
 			}
 		}
 
-		console.log(this.desiredCountry)
+		for(var i in dict.seasons){
+			if(sentence.includes(this.capitalize(dict.seasons[i])) || sentence.includes(dict.seasons[i])){
+				if(this.getCountryInSeason(dict.seasons[i]).length > 0){
+					this.desiredCountry = this.desiredCountry.concat(this.getCountryInSeason(dict.seasons[i]))
+					return "Hier sind einige Länder, die in diesen Jahreszeiten angenehm zu Besuchen sind: " + this.processList(this.desiredCountry)
+				}
+			}
+		}
+
+		for(var i in dict.characters){
+			if(sentence.includes(this.capitalize(dict.characters[i])) || sentence.includes(dict.characters[i])){
+				if(this.getCountryWithCharacteristic(dict.characters[i], -1).length > 0){
+					this.desiredCountry = this.desiredCountry.concat(this.getCountryWithCharacteristic(dict.characters[i], -1))
+				}
+			}
+		}
+
 		if(this.desiredCountry.length > 0){
 			for (var countryidx in this.desiredCountry) {
 				var countryObj = this.getCountry(this.desiredCountry[countryidx])
-				console.log(countryObj)
 				for (var i in countryObj.possibilities){
 					for (var j in countryObj.possibilities[i].keyword){
-						if(sentence.includes(countryObj.possibilities[i].keyword[j])){
+						if(sentence.includes(this.capitalize(countryObj.possibilities[i].keyword[j])) || sentence.includes(countryObj.possibilities[i].keyword[j])){
 							if(!this.usedKeyWords.includes(countryObj.possibilities[i].keyword[j])){
 								this.usedKeyWords.push(countryObj.possibilities[i].keyword[j])
 								return this.getRandomElement(countryObj.possibilities[i].answer)
@@ -251,6 +357,7 @@ class bot {
 	 */
 	post (nachricht) {
 		let msg = ''
+		// nachricht = nachricht.toLowerCase()
 		this.links.length = 0
 		this.images.length = 0
 		msg = this.hasKeyword(nachricht)

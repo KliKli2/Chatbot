@@ -1,50 +1,82 @@
 <!-- <div class="col-md-8 col-xl-6 chat"> -->
 <div class="card">
-    <div class="card-header msg_head">
-        <div class="d-flex bd-highlight">
-            <div class="img_cont">
-                <img src="https://therichpost.com/wp-content/uploads/2020/06/avatar2.png" class="rounded-circle user_img">
-                <span class="online_icon"></span>
-            </div>
-            <div class="user_info">
-                <span>{{ activeUser }}</span>
-                <p>1767 Messages</p>
-            </div>
-        </div>
-        <mat-icon *ngIf="mobile" id="action_menu_btn" (click)="toggler()">account_box</mat-icon>
-    </div>
-    <div class="card-body msg_card_body">
-        <div *ngFor="let msg of messages">
-            <div *ngIf="msg.name == activeUser; else received" class="d-flex justify-content-end mb-4">
-                <div class="msg_cotainer_send">
-                    {{ msg | json }}
-                    <span class="msg_time_send">9:10 AM, Today</span>
-                </div>
-                <div class="img_cont_msg">
-                    <img src="https://therichpost.com/wp-content/uploads/2020/06/avatar2.png" class="rounded-circle user_img_msg">
-                </div>
-            </div>
-            <ng-template #received>
-            <div class="d-flex justify-content-start mb-4">
-                <div class="img_cont_msg">
-                    <img src="https://therichpost.com/wp-content/uploads/2020/06/avatar2.png" class="rounded-circle user_img_msg">
-                </div>
-                <div class="msg_cotainer">
-                    {{ msg | json }}
-                    <span class="msg_time">9:12 AM, Today</span>
-                </div>
-            </div>
-            </ng-template>
-        </div>
-    </div>
-    <div class="card-footer">
-        <div class="input-group">
-            <input name="" class="form-control type_msg" [(ngModel)]="message" placeholder="Type your message...">
-            <div class="input-group-append" (click)="sendMessage()">
-                <span class="input-group-text send_btn"><i class="fas fa-location-arrow"></i></span>
-            </div>
-        </div>
-    </div>
+	<div class="card-header msg_head">
+		<div class="d-flex bd-highlight">
+			<div class="img_cont">
+				<img src="../../assets/person.png" class="rounded-circle user_img">
+				<span class="online_icon"></span>
+			</div>
+			<div class="user_info">
+				<span>{{ activeUser }}</span>
+			</div>
+		</div>
+		<mat-icon *ngIf="mobile" id="action_menu_btn" (click)="toggler()">account_box</mat-icon>
+	</div>
+	<div style="overflow: scroll; height: 40vh;" #scrollMe [scrollTop]="scrollMe.scrollHeight" class="card-body msg_card_body">
+		<div *ngFor="let msg of messages">
+			{{ msg | json }}
+			<div *ngIf="msg.name == activeUser; else received" class="d-flex justify-content-end mb-4">
+				<div class="msg_cotainer_send">
+					{{msg.msg}}
+					<span class="msg_time_send">{{ getTime() }}</span>
+				</div>
+				<div class="img_cont_msg">
+					<img src="../../assets/person.png" class="rounded-circle user_img_msg">
+				</div>
+			</div>
+			<ng-template #received>
+				<div class="d-flex justify-content-start mb-4">
+					<div class="img_cont_msg">
+						<img src="../../assets/robot.jpeg" class="rounded-circle user_img_msg">
+					</div>
+					<div class="msg_cotainer">
+						<div *ngIf="msg.msg.indexOf('|') == -1">
+							<div *ngIf="msg.msg.indexOf('+') == -1">
+								<p>{{ msg.msg }}</p>
+							</div>
+							<div *ngIf="msg.msg.indexOf('+') != -1">
+								{{ msg.msg.substring(0, msg.msg.indexOf('+')) }}
+								<ol>
+								<div *ngFor="let obj of processList(msg.msg) | keyvalue">
+									<li>{{ obj.value }}</li>
+								</div>
+								</ol>
+							</div>
+						</div>
+						<div *ngIf="msg.msg.indexOf('|') != -1">
+							{{ msg.msg.substring(0, msg.msg.indexOf('|')) }}
+							<div *ngFor="let obj of processMsg(msg.msg)">
+							<mat-card class="example-card">
+								<mat-card-header>
+									<mat-card-title>{{ getElFromMap(obj, "name") }}</mat-card-title>
+								</mat-card-header>
+								<mat-card-content>
+									<p>{{ getElFromMap(obj, "description") }}</p>
+									<ol>
+										<li>{{ getElFromMap(obj, "price") }}</li>
+										<li>{{ getElFromMap(obj, "time") }}</li>
+									</ol>
+								</mat-card-content>
+							</mat-card>
+							</div>
+						</div>
+						<div *ngIf="msg.links.length > 0">
+							<a target="_blank" [href]="msg.links">Link</a>
+						</div>
+						<span class="msg_time">{{ getTime() }}</span>
+					</div>
+				</div>
+			</ng-template>
+		</div>
+	</div>
+	<div class="card-footer">
+		<div class="input-group">
+			<input name="" class="form-control type_msg" [(ngModel)]="message" (keyup.enter)="sendMessage()" placeholder="Type your message...">
+			<div class="input-group-append" (click)="sendMessage()">
+				<span class="input-group-text send_btn"><i class="fas fa-location-arrow"></i></span>
+			</div>
+		</div>
+	</div>
 </div>
 <!-- </div> -->
 
